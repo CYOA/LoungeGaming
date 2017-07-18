@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WebController {
 	
 	@Resource	
-	CharacterRepository characterRepo;
+	HeroRepository heroRepo;
 
 	@RequestMapping("/home")
 	public String displayCharacter(Model model) {
-		model.addAttribute("hero",characterRepo.findOne((long) 1));
+		model.addAttribute("hero",heroRepo.findOne((long) 1));
 		return "Scenario1";
 	}
 	

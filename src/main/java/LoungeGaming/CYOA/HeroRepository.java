@@ -2,7 +2,7 @@ package LoungeGaming.CYOA;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface CharacterRepository extends CrudRepository<Character, Long> {
+public interface HeroRepository extends CrudRepository<Hero, Long> {
 		
 	
 

@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Character {
+public class Hero {
 	
 	@Id
 	private long id;
@@ -21,11 +21,11 @@ public class Character {
  * Constructors
  *************************/
 	
-    public Character() {
+    public Hero() {
     	
     }
     
-    public Character(long id, String name, int hp, String dialogue1, String imageUrl) {
+    public Hero(long id, String name, int hp, String dialogue1, String imageUrl) {
     	this.id = id;
     	this.name = name;
     	this.hp = hp;
