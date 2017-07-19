@@ -11,10 +11,14 @@ public class WebController {
 	
 	@Resource	
 	HeroRepository heroRepo;
+	
+	@Resource
+	OptionRepository optionRepo;
 
 	@RequestMapping("/home")
 	public String displayCharacter(Model model) {
 		model.addAttribute("hero",heroRepo.findOne((long) 1));
+		model.addAttribute("options", optionRepo.findAll());
 		return "Scenario1";
 	}
 	
