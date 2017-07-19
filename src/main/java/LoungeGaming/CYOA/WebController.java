@@ -19,7 +19,7 @@ public class WebController {
 	public String displayCharacter(Model model) {
 		model.addAttribute("hero",heroRepo.findOne((long) 1));
 		model.addAttribute("options", optionRepo.findAll());
-		return "Scenario1";
+		return "ChooseCharacter";
 	}
 	
 	
