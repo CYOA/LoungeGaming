@@ -14,11 +14,15 @@ public class WebController {
 	
 	@Resource
 	OptionRepository optionRepo;
+	
+	@Resource
+	NpcRepository npcRepo;
 
 	@RequestMapping("/home")
 	public String displayCharacter(Model model) {
 		model.addAttribute("hero",heroRepo.findOne((long) 1));
 		model.addAttribute("options", optionRepo.findAll());
+		model.addAttribute("elder", npcRepo.findOne((long) 1));
 		return "ChooseCharacter";
 	}
 	

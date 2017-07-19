@@ -16,15 +16,25 @@ public class Populator implements CommandLineRunner {
 	private HeroRepository heroRepo;
 	@Resource
 	private OptionRepository optionRepo;
+	@Resource
+	private NpcRepository npcRepo;
 
 	@Override
 	public void run(String... args) throws Exception {
+		
+		Npc villageElder = new Npc(1, "Village Elder", "");
+		villageElder.setDialogue(0, "It gon rain");
+		villageElder.setDialogue(1, "Deal with it");
+		npcRepo.save(villageElder);
 
 		Hero character1 = new Hero(1, "Bob", 100, " Hi my name is Bob", "/images/knight.png");
 		heroRepo.save(character1);
 		
+		/***************
+		 * Introduction
+		 ****************/
 		Collection<Option> children1 = new ArrayList<Option>();
-		Option parent1 = new Option("what do i choose?", null, children1);
+		Option parent1 = new Option("what do i do?", null, children1);
 		optionRepo.save(parent1);
 
 		Option childA = new Option("left", parent1, null);
