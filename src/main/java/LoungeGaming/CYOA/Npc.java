@@ -2,10 +2,12 @@ package LoungeGaming.CYOA;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Npc {
@@ -15,15 +17,15 @@ public class Npc {
 	
 	private String name;
 	private String imageUrl;
-	private Map<Integer, String> dialogue = new HashMap<Integer, String>();
 	
-	public Map<Integer, String> getDialogue() {
-		return dialogue;
+	
+	@OneToMany (mappedBy= "npc")
+	private Set<Dialogue> dialogues;
+	
+	public Set<Dialogue> getDialogues(){
+		return dialogues;
 	}
-
-	public void setDialogue(int key, String newDialogue) {
-		dialogue.put(key, newDialogue);
-	}
+	
 
 	public Npc() {
 		

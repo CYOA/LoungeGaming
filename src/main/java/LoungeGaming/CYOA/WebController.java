@@ -18,12 +18,16 @@ public class WebController {
 	@Resource
 	NpcRepository npcRepo;
 
+	@Resource
+	DialogueRepository dialogueRepo;
+	
 	@RequestMapping("/home")
 	public String displayCharacter(Model model) {
-		model.addAttribute("hero",heroRepo.findOne((long) 1));
+		model.addAttribute("hero", heroRepo.findOne((long) 1));
 		model.addAttribute("options", optionRepo.findAll());
 		model.addAttribute("elder", npcRepo.findOne((long) 1));
-		return "ChooseCharacter";
+//		model.addAttribute("dialogues", npcRepo.findOne((1)));
+		return "Scenario1";
 	}
 	
 	

@@ -10,8 +10,7 @@
 <p th:text = "${hero.dialogue1}"></p>
 <p th:text = "'My hp: ' + ${hero.hp}"></p>
 
-<p th:text = "${elder.getDialogue(0)}"></p>
-<!-- <p th:text = "'My hp: ' + ${hero.hp}"></p> -->
+<p th:each = "current: ${elder.dialogues}" th:text= "${current.content}"></p>
 
 <p th:each= "current: ${options}" th:text= "${current.text}"></p>
 

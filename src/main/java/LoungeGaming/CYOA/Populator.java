@@ -18,14 +18,19 @@ public class Populator implements CommandLineRunner {
 	private OptionRepository optionRepo;
 	@Resource
 	private NpcRepository npcRepo;
+	
+	@Resource DialogueRepository dialogueRepo;
 
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Npc villageElder = new Npc(1, "Village Elder", "");
-		villageElder.setDialogue(0, "It gon rain");
-		villageElder.setDialogue(1, "Deal with it");
+		Npc villageElder = new Npc(1, "Village Elder", "words");
 		npcRepo.save(villageElder);
+		
+		Dialogue d1 = new Dialogue(villageElder, "It gon rain");
+		dialogueRepo.save(d1);
+		
+		
 
 		Hero character1 = new Hero(1, "Bob", 100, " Hi my name is Bob", "/images/knight.png");
 		heroRepo.save(character1);
