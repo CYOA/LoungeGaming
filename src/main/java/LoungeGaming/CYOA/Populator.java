@@ -14,9 +14,9 @@ public class Populator implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Hero character1 = new Hero(1,"Bob",100," Hi my name is Bob", "/images/knight.png");
+		Hero character1 = new Hero(1, "Bob", 100, " Hi my name is Bob", "/images/knight.png");
 		heroRepo.save(character1);
-		
+	
 
 	}
 
