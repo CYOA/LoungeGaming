@@ -20,8 +20,9 @@ public class Populator implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Hero character1 = new Hero(1, "Bob", 100, " Hi my name is Bob", "/images/CharacterNaming.png");
-
+		Hero character1 = new Hero(1, "Bob", 100, " Hi my name is Bob", "/images/knight.png");
+		heroRepo.save(character1);
+		
 		Collection<Option> children1 = new ArrayList<Option>();
 		Option parent1 = new Option("what do i choose?", null, children1);
 		optionRepo.save(parent1);
