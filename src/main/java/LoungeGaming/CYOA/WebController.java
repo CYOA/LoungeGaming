@@ -30,6 +30,10 @@ public class WebController {
 		return "Scenario1";
 	}
 	
-	
+	@RequestMapping("/intro")
+	public String displayIntro(Model model) {
+		model.addAttribute("narrator", npcRepo.findOne((long)2));
+		return "Intro";
+	}
 
 }

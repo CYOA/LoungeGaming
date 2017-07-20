@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Intro Page</title>
+</head>
+<body>
+<h1>In a small village outside the city</h1>
+
+<p th:each = "current: ${narrator.dialogues}" th:text= "${current.content}"></p>
+
+<button class = "continue"><a th:ref="@{/chooseCharacter}"></a>Continue</button>
+
+
+</body>
+</html>

@@ -26,8 +26,9 @@ public String getContent() {
 	return content;
 }
 
-public Dialogue(Npc npc, String content) {
+public Dialogue(Npc npc, long id, String content) {
 	this.npc = npc;
+	this.id=id;
 	this.content = content;
 }
 
