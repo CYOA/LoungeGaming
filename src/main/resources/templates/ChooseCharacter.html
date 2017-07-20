@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>Choose Character</title>
-	
+<title>Choose Your Character</title>
+<link rel="stylesheet" type="text/css" href="chooseCharacter.css" />
 </head>
 <body>
-
-<img th:src="${hero.imageUrl}"></img>
-<p th:text = "${hero.dialogue1}"></p>
-<p th:text = "'My hp: ' + ${hero.hp}"></p>
-
-<p th:each= "current: ${options}" th:text= "${current.text}"></p>
-
+	<img th:src="@{/images/CharacterPage.svg}" class="backgroundImage"></img>
+	<div class="container">
+		<button type="button">
+			<a th:href="@{/nameCharacter}">Choose Me!</a>
+		</button>
+	</div>
 </body>
 </html>

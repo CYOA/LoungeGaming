@@ -28,8 +28,21 @@ public class WebController {
 		model.addAttribute("elder", npcRepo.findOne((long) 1));
 //		model.addAttribute("dialogues", npcRepo.findOne((1)));
 		return "Scenario1";
+			
 	}
 	
+	@RequestMapping("/chooseCharacter")
+		public String retrieveHero(Model model) {
+			model.addAttribute("hero", heroRepo.findAll());
+			return "ChooseCharacter";
+		}
+	
+	@RequestMapping("/nameCharacter")
+	public String chooseName(Model model) {
+		model.addAttribute("hero", heroRepo.findAll());
+		return "nameCharacter";
+	}
+  
 	@RequestMapping("/intro")
 	public String displayIntro(Model model) {
 		model.addAttribute("narrator", npcRepo.findOne((long)2));
@@ -37,3 +50,5 @@ public class WebController {
 	}
 
 }
+
+
