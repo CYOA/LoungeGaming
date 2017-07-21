@@ -39,6 +39,8 @@ public class Populator implements CommandLineRunner {
 				+ "he declared the world would end in seven days.");
 		dialogueRepo.save(introPage);
 		
+		/**/
+		
 		Npc narrator1 = new Npc(1, "Narrator1", "image address");
 		npcRepo.save(narrator1);
 		
@@ -57,12 +59,16 @@ public class Populator implements CommandLineRunner {
 		Dialogue d1 = new Dialogue(villageElder,1, "Do not despair in these dark times. We must be there for"
 				+ "while we wait out our remaining days");
 		dialogueRepo.save(d1);
+		
+		/************************************************
+		 * Hero object(s)
+		 **********************************************/
 
 		Hero character1 = new Hero(1, "Bob", 100, " Hi my name is Bob", "/images/knight.png");
 		heroRepo.save(character1);
 		
 		/***************
-		 * Introduction
+		 * Testing
 		 ****************/
 		Collection<Option> children1 = new ArrayList<Option>();
 		Option parent1 = new Option("what do i do?", null, children1);
