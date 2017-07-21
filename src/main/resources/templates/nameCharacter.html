@@ -13,7 +13,7 @@
     <p>What would you like to name your character?</p>
     
     <form method="POST">
-			<input type="hidden" name="id" th:value="${hero.name}" /> <label>Character Name:
+			<input type="hidden" name="id" th:value="${hero}" /> <label>Character Name:
 				<input type="text" name="nameCharacter" />
 			</label>
 			<button th:formaction="@{/addHero}">Create Tag</button>
