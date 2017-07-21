@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
-    <title>Name Your Character</title>
-    <link rel="stylesheet" type="text/css" href="chooseCharacter.css" /> 
+<link href="CSS/nameCharacter.css" rel="stylesheet"></link>
 </head>
 <body>
-<img th:src="@{/images/CharacterChoice.svg}" class="backgroundImage"></img>
-<div class="container">
+	<div class="dialogue_box">
+		<div class="textbox">
+			<h1>
+				Name Your Character
 
-</div>
+			</h1>
+		</div>
+
+	</div>
+	<div class="container">
+		<img th:src="@{/images/Knight.svg}" class="image" style="width: 100%"></img>
+
+		<div class="middle">
+			<button class="button">
+				<a th:href="@{/#}">Start Your Quest!</a>
+			</button>
+		</div>
+	</div>
+
+<script src="naming.js"></script>
 </body>
 </html>
