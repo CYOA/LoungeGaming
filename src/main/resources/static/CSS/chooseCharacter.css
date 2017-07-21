@@ -1,0 +1,36 @@
+ .backgroundImage {
+	background-size: stretch;
+	background-position: 200 -200px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+} 
+
+/* body { 
+  background: url(/images/CharacterPage.svg) no-repeat center center fixed; 
+  background-size: stretch;
+  background-position: 200 -200px;
+} */
+
+.container {
+	align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	margin-top: 600px;
+	position: absolute;
+	top: 300px;
+}
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    margin: auto;
+    display: block;
+}
+
+/* button:hover {
+	background-color: #f2f4f3;
+}
+ */
+}

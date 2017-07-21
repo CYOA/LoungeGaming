@@ -21,13 +21,13 @@ public class WebController {
 	@Resource
 	DialogueRepository dialogueRepo;
 	
-	@RequestMapping("/home")
+	@RequestMapping("/homepage")
 	public String displayCharacter(Model model) {
 		model.addAttribute("hero", heroRepo.findOne((long) 1));
 		model.addAttribute("options", optionRepo.findAll());
 		model.addAttribute("elder", npcRepo.findOne((long) 1));
 //		model.addAttribute("dialogues", npcRepo.findOne((1)));
-		return "Scenario1";
+		return "homepage";
 			
 	}
 	

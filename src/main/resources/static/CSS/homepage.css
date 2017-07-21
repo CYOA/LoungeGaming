@@ -1,0 +1,23 @@
+body { 
+  background: url(/images/CastleHomePage.svg) no-repeat center center fixed; 
+  background-size: stretch;
+  background-position: 200 -200px;
+}
+
+.container {
+	align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	margin-top: 500px;
+}
+
+button {
+	background-color: #ff8c1a;
+}
+
+button:hover {
+	background-color: #f2f4f3;
+}
+
+
+
