@@ -34,7 +34,7 @@ public class WebController {
 	@RequestMapping("/chooseCharacter")
 		public String retrieveHero(Model model) {
 			model.addAttribute("hero", heroRepo.findAll());
-			return "ChooseCharacter";
+			return "test";
 		}
 	
 	@RequestMapping("/nameCharacter")

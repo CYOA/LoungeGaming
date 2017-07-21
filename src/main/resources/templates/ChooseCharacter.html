@@ -5,9 +5,16 @@
 <link rel="stylesheet" type="text/css" href="chooseCharacter.css" />
 </head>
 <body>
-	<img th:src="@{/images/CharacterPage.svg}" class="backgroundImage"></img>
-	<div class="container">
+	<img th:src="@{/images/CharacterPageWithoutPeople.svg}" class="backgroundImage"></img> 
+	<div class="container1">
 		<div class="wrapper">
+			<div class="container">
+				<img src="/images/Knight.svg" alt="knight" class="image"
+					style="width: 100%"></img>
+				<div class="middle">
+					<div class="text">John Doe</div>
+				</div>
+			</div>
 			<button class="button">
 				<a th:href="@{/nameCharacter}">Choose Me!</a>
 			</button>
