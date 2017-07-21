@@ -3,3 +3,24 @@ body {
 	background-size: stretch;
 	background-position: 200 -200px;
 }
+
+button {
+	background-color: #D4AF6A;
+
+}
+button.continue{
+	border-radius:8px;
+	font-size: 40px;
+	color: #553700;
+}
+
+button:hover {
+	background-color: #FFE1AA;
+}
+
+.container {
+	align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
