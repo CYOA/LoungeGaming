@@ -27,22 +27,25 @@ public class Populator implements CommandLineRunner {
 		Npc villageElder = new Npc(1, "Village Elder", "words");
 		npcRepo.save(villageElder);
 		
-		Npc narrator = new Npc(2, "Narrator", "words");
+		Npc narrator = new Npc(2, "Narrator", "image address");
 		npcRepo.save(narrator);
 		
 		Dialogue d1 = new Dialogue(villageElder,1, "It gon rain");
 		dialogueRepo.save(d1);
 		
-		Dialogue introPage = new Dialogue(narrator,2,  "Lorem ipsum dictum ullamcorper semper condimentum vivamus lacinia vehicula, tellus platea ut volutpat massa curae aliquam, curabitur nibh venenatis vitae vivamus primis quisque.\r\n" + 
-				"\r\n" + 
-				"Ante curabitur ut magna velit himenaeos in eget risus, condimentum faucibus interdum quisque feugiat lacinia augue, consectetur vitae neque sollicitudin donec aenean nisl est duis venenatis rutrum taciti ut rutrum sagittis non.\r\n" + 
-				"\r\n" + 
-				"Venenatis faucibus nisi ultrices nulla pulvinar ipsum vestibulum, dapibus porttitor quis elementum venenatis lobortis, cubilia netus mauris lobortis ipsum porttitor luctus nisi fames proin posuere semper morbi at euismod blandit nostra.\r\n" + 
-				"\r\n" + 
-				"Aliquet dolor iaculis tortor velit tempor etiam proin, ultrices malesuada convallis sem quisque euismod adipiscing blandit, scelerisque curae quisque massa leo curabitur convallis bibendum auctor elementum aliquam rhoncus inceptos mollis facilisis enim turpis adipiscing.\r\n" + 
-				"\r\n" + 
-				"Hac ultricies integer euismod suspendisse inceptos ac iaculis pellentesque posuere porttitor, vitae suspendisse metus aenean id felis proin sollicitudin euismod ullamcorper porta blandit lacus adipiscing ut tortor scelerisque ullamcorper auctor integer porta.");
+		Dialogue introPage = new Dialogue(narrator,	2, "Word is ringing out from the Great City "
+				+ "that an ominous gate has appeared in the center of the city. As people gathered "
+				+ "to marvel, a single figure stepped forth from the gate. Cloaked and forboding, "
+				+ "he declared the world would end in seven days.");
 		dialogueRepo.save(introPage);
+		
+		Npc narrator2 = new Npc(3, "Narrator2", "image address");
+		npcRepo.save(narrator2);
+		
+		Dialogue introPage2 = new Dialogue(narrator2, 3, "In a small village outside the city, a village "
+				+ "elder gathers everyone together to share the grim news. While he seems resigned to their fate,"
+				+ "there is one villager who is not...");
+		dialogueRepo.save(introPage2);
 		
 		
 
