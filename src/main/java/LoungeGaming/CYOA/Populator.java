@@ -24,14 +24,14 @@ public class Populator implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Npc villageElder = new Npc(1, "Village Elder", "words");
-		npcRepo.save(villageElder);
+		/***********************************************
+		 * Narrator NPCs and Accompanying Dialogue 0-20
+		 *********************************************/
 		
-		Npc narrator = new Npc(2, "Narrator", "image address");
+		
+		Npc narrator = new Npc(0, "Narrator0", "image address");
 		npcRepo.save(narrator);
 		
-		Dialogue d1 = new Dialogue(villageElder,1, "It gon rain");
-		dialogueRepo.save(d1);
 		
 		Dialogue introPage = new Dialogue(narrator,	2, "Word is ringing out from the Great City "
 				+ "that an ominous gate has appeared in the center of the city. As people gathered "
@@ -39,15 +39,24 @@ public class Populator implements CommandLineRunner {
 				+ "he declared the world would end in seven days.");
 		dialogueRepo.save(introPage);
 		
-		Npc narrator2 = new Npc(3, "Narrator2", "image address");
-		npcRepo.save(narrator2);
+		Npc narrator1 = new Npc(1, "Narrator1", "image address");
+		npcRepo.save(narrator1);
 		
-		Dialogue introPage2 = new Dialogue(narrator2, 3, "In a small village outside the city, a village "
+		Dialogue introPage2 = new Dialogue(narrator1, 3, "In a small village outside the city, a village "
 				+ "elder gathers everyone together to share the grim news. While he seems resigned to their fate,"
 				+ "there is one villager who is not...");
 		dialogueRepo.save(introPage2);
 		
+		/************************************************
+		 * VillageElder and Accompanying Dialogue
+		 **********************************************/
 		
+		Npc villageElder = new Npc(1, "Village Elder", "words");
+		npcRepo.save(villageElder);
+		
+		Dialogue d1 = new Dialogue(villageElder,1, "Do not despair in these dark times. We must be there for"
+				+ "while we wait out our remaining days");
+		dialogueRepo.save(d1);
 
 		Hero character1 = new Hero(1, "Bob", 100, " Hi my name is Bob", "/images/knight.png");
 		heroRepo.save(character1);
