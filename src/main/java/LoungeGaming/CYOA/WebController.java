@@ -31,6 +31,15 @@ public class WebController {
 			
 	}
 	
+	
+	@RequestMapping("/intro")
+	public String displayIntro(Model model) {
+		model.addAttribute("narrator0", npcRepo.findOne((long) 0));
+		//Narrator2 text should replace Narrator text after a short period of time
+		model.addAttribute("narrator1", npcRepo.findOne((long) 1));
+		return "Intro";
+	}
+	
 	@RequestMapping("/chooseCharacter")
 		public String retrieveHero(Model model) {
 			model.addAttribute("hero", heroRepo.findAll());
@@ -41,12 +50,6 @@ public class WebController {
 	public String chooseName(Model model) {
 		model.addAttribute("hero", heroRepo.findAll());
 		return "nameCharacter";
-	}
-  
-	@RequestMapping("/intro")
-	public String displayIntro(Model model) {
-		model.addAttribute("narrator", npcRepo.findOne((long)2));
-		return "Intro";
 	}
 
 }
