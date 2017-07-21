@@ -1,5 +1,6 @@
 
-.dialogue_box {
+
+dialogue_box {
     min-width: 500px;
     min-height: 260px;
     background: rgba(255,230,230,.85);

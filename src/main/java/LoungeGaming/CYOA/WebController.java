@@ -6,6 +6,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
+
+
 @Controller
 public class WebController {
 	
@@ -48,7 +51,13 @@ public class WebController {
 		model.addAttribute("narrator", npcRepo.findOne((long)2));
 		return "Intro";
 	}
-
+	@RequestMapping("/addHero")
+	public String createHero(String name) {
+		Hero hero = new Hero(name);
+		heroRepo.save(hero); 
+		return "hero";
+		
+}
 }
 
 

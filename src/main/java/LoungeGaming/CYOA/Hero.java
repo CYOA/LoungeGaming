@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Hero {
 	
 	@Id
-	private long id;
+	private long id = 1;
 	
 	private String name;
 	private String dialogue1;
@@ -32,6 +32,10 @@ public class Hero {
     	this.dialogue1 = dialogue1;
     	this.imageUrl = imageUrl;
     }
+
+public Hero(String name) {
+		this.name=name;
+	}
 
 /*****************************
  * Get Methods

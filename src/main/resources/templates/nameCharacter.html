@@ -2,22 +2,29 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Name Your Character</title>
-    <link rel="stylesheet" type="text/css" href="chooseCharacter.css" /> 
+    <link rel="stylesheet" type="text/css" href="nameCharacter.css" /> 
     <link href="CSS/textBoxNoPortrait.css" rel="stylesheet"></link>
 </head>
 <body>
-<img th:src="@{/images/CharacterChoice.svg}" class="backgroundImage"></img>
-<div class="container">
 
 <div class="dialogue_box">                                          
-                     
-
-     
+                         
    <div class="textbox">                      
-    <p>Test test test test test </p>
+    <p>What would you like to name your character?</p>
+    
+    <form method="POST">
+			<input type="hidden" name="id" th:value="${hero.name}" /> <label>Character Name:
+				<input type="text" name="nameCharacter" />
+			</label>
+			<button th:formaction="@{/addHero}">Create Tag</button>
+		</form>
     </div>
    
 </div>
+<img th:src="@{/images/CharacterChoice.svg}" class="backgroundImage"></img> 
+<div class="container">
+
+
 
 
 </div>

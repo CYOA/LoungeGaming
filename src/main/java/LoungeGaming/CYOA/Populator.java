@@ -52,6 +52,7 @@ public class Populator implements CommandLineRunner {
 		/***************
 		 * Introduction
 		 ****************/
+		
 		Collection<Option> children1 = new ArrayList<Option>();
 		Option parent1 = new Option("what do i do?", null, children1);
 		optionRepo.save(parent1);
@@ -63,6 +64,8 @@ public class Populator implements CommandLineRunner {
 
 		children1.add(childA);
 		children1.add(childB);
+		
+			
 
 	}
 
