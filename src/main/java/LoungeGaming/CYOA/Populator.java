@@ -18,8 +18,8 @@ public class Populator implements CommandLineRunner {
 	private OptionRepository optionRepo;
 	@Resource
 	private NpcRepository npcRepo;
-	
-	@Resource DialogueRepository dialogueRepo;
+	@Resource 
+	DialogueRepository dialogueRepo;
 
 	@Override
 	public void run(String... args) throws Exception {
@@ -29,7 +29,7 @@ public class Populator implements CommandLineRunner {
 		 *********************************************/
 		
 		
-		Npc narrator = new Npc(0, "Narrator0", "image address");
+		Npc narrator = new Npc(0, "Narrator0", "image address here");
 		npcRepo.save(narrator);
 		
 		
@@ -41,7 +41,7 @@ public class Populator implements CommandLineRunner {
 		
 		/**/
 		
-		Npc narrator1 = new Npc(1, "Narrator1", "image address");
+		Npc narrator1 = new Npc(1, "Narrator1", "image address here");
 		npcRepo.save(narrator1);
 		
 		Dialogue introPage2 = new Dialogue(narrator1, 3, "In a small village outside the city, a village "
@@ -53,7 +53,7 @@ public class Populator implements CommandLineRunner {
 		 * VillageElder and Accompanying Dialogue
 		 **********************************************/
 		
-		Npc villageElder = new Npc(1, "Village Elder", "words");
+		Npc villageElder = new Npc(1, "Village Elder", "image address here");
 		npcRepo.save(villageElder);
 		
 		Dialogue d1 = new Dialogue(villageElder,1, "Do not despair in these dark times. We must be there for"
