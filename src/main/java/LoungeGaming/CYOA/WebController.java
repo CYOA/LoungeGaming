@@ -51,10 +51,10 @@ public class WebController {
 	}
 
 	@RequestMapping("/addHero")
-	public String createHero(@RequestParam(value = "name") String name) {
-		Hero hero = new Hero(name);
+	public String createHero(@RequestParam(value = "heroName") String heroName) {
+		Hero hero = new Hero(heroName);
 		heroRepo.save(hero);
-		return "redirect:/nameCharacter";
+		return "redirect:/startQuest";
 
 	}
 }

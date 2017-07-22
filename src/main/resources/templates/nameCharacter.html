@@ -3,6 +3,7 @@
 <head>
     <title>Name Your Character</title>
      <link rel="stylesheet" type="text/css" href="CSS/nameCharacter.css"></link>
+     <script type="text/javascript" src = "characterName.js"></script>
   <!-- <link href="CSS/textBoxNoPortrait.css" rel="stylesheet"></link> -->
 <!--   <script th:inline="javascript">
 
@@ -22,10 +23,10 @@
        
     <form method="POST">
 			<input type="hidden" name="id" th:value="${hero}" /> <label>What would you like to name your character?
-				<input type="text" name="name" />
+				<input type="text" name="heroName" maxlength ='25' />
 			</label>
 			<p></p>
-			<button class="submit" th:formaction="@{/addHero}">Submit Name</button>
+			<button id="submit" th:formaction="@{/addHero}">Submit Name</button>
 		</form>
 		
     </div>
@@ -38,5 +39,6 @@
 
 
 </div>
+
 </body>
 </html>
