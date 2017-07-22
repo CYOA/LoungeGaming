@@ -48,26 +48,11 @@ public class WebController {
 		return "chooseCharacter";
 	}
 
-	
-	@RequestMapping("/nameCharacter")
-	public String addName(Model model) {
+	@RequestMapping("/startQuest")
+	public String startQuest(Model model) {
 		model.addAttribute("hero", heroRepo.findAll());
-		return "nameCharacter";
+		return "StartQuest";
 	}
 
-/*	@RequestMapping("/nameCharacter")
-	public String addHero(@RequestParam(value = "id") Long id, String name) {
-		Hero hero = new Hero();
-		heroRepo.save(hero);
-		return "nameCharacter";
-	}*/
-
-	@RequestMapping("/nameHero")
-	public String createHero(Long id, String name) {
-		Hero hero = new Hero(name);
-		heroRepo.save(hero);
-		return "redirect:/nameCharacter?id=" + id;
-
-	}
 
 }
