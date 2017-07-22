@@ -61,11 +61,12 @@ public class Populator implements CommandLineRunner {
 		dialogueRepo.save(d1);
 		
 		/************************************************
-		 * Hero object(s)
+		 * Hero object(s) removed this to create a controller
 		 **********************************************/
-
-		Hero character1 = new Hero(1, "Bob", 100, " Hi my name is Bob", "/images/knight.png");
-		heroRepo.save(character1);
+		
+		
+		/*Hero character1 = new Hero(1, "Bob", 100, " Hi my name is Bob", "/images/knight.png");
+		heroRepo.save(character1);*/
 		
 		/***************
 		 * Testing

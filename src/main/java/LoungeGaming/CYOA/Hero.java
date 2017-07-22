@@ -32,6 +32,10 @@ public class Hero {
     	this.dialogue1 = dialogue1;
     	this.imageUrl = imageUrl;
     }
+    
+    public Hero(String name){
+    	this.name = name;
+    }
 
 /*****************************
  * Get Methods
@@ -50,6 +54,9 @@ public class Hero {
 	
 	public String getImageUrl() {
 		return imageUrl;
+	}
+	public void add(Hero hero) {
+		hero.add(hero);
 	}
 	
 }
