@@ -29,6 +29,23 @@ public class WebController {
 		model.addAttribute("hero", heroRepo.findOne((long) 1));
 		model.addAttribute("options", optionRepo.findAll());
 		model.addAttribute("elder", npcRepo.findOne((long) 1));
+
+		// model.addAttribute("dialogues", npcRepo.findOne((1)));
+		return "homepage";
+
+	}
+
+	@RequestMapping("/chooseCharacter")
+	public String retrieveHero(Model model) {
+		model.addAttribute("hero", heroRepo.findAll());
+		return "ChooseCharacter";
+	}
+
+	@RequestMapping("/nameCharacter")
+	public String chooseName(Model model) {
+		model.addAttribute("hero", heroRepo.findAll());
+		return "nameCharacter";
+
 		return "homepage";
 
 	}
@@ -40,6 +57,17 @@ public class WebController {
 		// time
 		model.addAttribute("narrator1", npcRepo.findOne((long) 1));
 		return "Intro";
+	}
+		model.addAttribute("narrator", npcRepo.findOne((long) 2));
+		return "Intro";
+	}
+
+	@RequestMapping("/addHero")
+	public String createHero(@RequestParam(value = "heroName") String heroName) {
+		Hero hero = new Hero(heroName);
+		heroRepo.save(hero);
+		return "redirect:/startQuest";
+
 	}
 
 	@RequestMapping("/chooseCharacter")

@@ -13,6 +13,7 @@ body {
 
 button {
 	background-color: #ff8c1a;
+	border-radius: 12px;
 }
 
 button:hover {

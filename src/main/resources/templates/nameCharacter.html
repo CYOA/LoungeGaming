@@ -1,6 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <title>Name Your Character</title>
+     <link rel="stylesheet" type="text/css" href="CSS/nameCharacter.css"></link>
+     <script type="text/javascript" src = "characterName.js"></script>
+  <!-- <link href="CSS/textBoxNoPortrait.css" rel="stylesheet"></link> -->
+<!--   <script th:inline="javascript">
+
+      /*<![CDATA[*/
+	    
+         var user = 'User Name';
+
+       /*]]>*/
+</script>  -->
+  
+</head>
+<body>
+
+<div class="dialogue_box">                                          
+                         
+   <div class="textbox">                      
+       
+    <form method="POST">
+			<input type="hidden" name="id" th:value="${hero}" /> <label>What would you like to name your character?
+				<input type="text" name="heroName" maxlength ='25' />
+			</label>
+			<p></p>
+			<button id="submit" th:formaction="@{/addHero}">Submit Name</button>
+		</form>
+		
+    </div>
+   
+</div>
+<!-- <img th:src="@{/images/CharacterChoice.svg}" class="backgroundImage"></img> --> 
+<div class="container">
+
+
+
+
+</div>
+
+=======
 <link href="CSS/nameCharacter.css" rel="stylesheet"></link>
 </head>
 <body>
@@ -24,5 +65,6 @@
 	</div>
 
 <script src="naming.js"></script>
+
 </body>
 </html>
