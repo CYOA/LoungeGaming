@@ -4,6 +4,15 @@
     <title>Name Your Character</title>
      <link rel="stylesheet" type="text/css" href="CSS/nameCharacter.css"></link>
   <!-- <link href="CSS/textBoxNoPortrait.css" rel="stylesheet"></link> -->
+<!--   <script th:inline="javascript">
+
+      /*<![CDATA[*/
+	    
+         var user = 'User Name';
+
+       /*]]>*/
+</script>  -->
+  
 </head>
 <body>
 
@@ -13,11 +22,12 @@
        
     <form method="POST">
 			<input type="hidden" name="id" th:value="${hero}" /> <label>What would you like to name your character?
-				<input type="text" name="nameCharacter" />
+				<input type="text" name="name" />
 			</label>
 			<p></p>
 			<button class="submit" th:formaction="@{/addHero}">Submit Name</button>
 		</form>
+		
     </div>
    
 </div>

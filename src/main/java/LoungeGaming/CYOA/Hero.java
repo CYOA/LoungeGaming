@@ -10,7 +10,7 @@ public class Hero {
 	@Id
 	private long id = 1;
 	
-	private String name;
+	public String name;
 	private String dialogue1;
 	private String imageUrl;
 	
@@ -54,6 +54,9 @@ public Hero(String name) {
 	
 	public String getImageUrl() {
 		return imageUrl;
+	}
+	public void add(Hero hero) {
+		hero.add(hero);
 	}
 	
 }
