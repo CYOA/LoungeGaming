@@ -54,7 +54,7 @@ public class WebController {
 	@RequestMapping("/addHero")
 	public String createHero(String name) {
 		Hero hero = new Hero(name);
-		heroRepo.save(hero); 
+			heroRepo.save(hero); 
 		return "hero";
 		
 }
