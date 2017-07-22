@@ -33,9 +33,7 @@ public class Hero {
     	this.imageUrl = imageUrl;
     }
     
-    public Hero(String name){
-    	this.name = name;
-    }
+
 
 public Hero(String heroName) {
 		this.heroName=heroName;

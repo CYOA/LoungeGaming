@@ -35,18 +35,11 @@ public class WebController {
 
 	}
 
-	@RequestMapping("/chooseCharacter")
-	public String retrieveHero(Model model) {
-		model.addAttribute("hero", heroRepo.findAll());
-		return "ChooseCharacter";
-	}
 
 	@RequestMapping("/nameCharacter")
 	public String chooseName(Model model) {
 		model.addAttribute("hero", heroRepo.findAll());
 		return "nameCharacter";
-
-		return "homepage";
 
 	}
 
@@ -57,9 +50,7 @@ public class WebController {
 		// time
 		model.addAttribute("narrator1", npcRepo.findOne((long) 1));
 		return "Intro";
-	}
-		model.addAttribute("narrator", npcRepo.findOne((long) 2));
-		return "Intro";
+	
 	}
 
 	@RequestMapping("/addHero")
