@@ -1,4 +1,5 @@
 
+
 body {
 	background: url(/images/CharacterPageWithoutPeople.svg) no-repeat center center fixed;
 	background-size: strecth;
@@ -39,6 +40,7 @@ button:hover {
     border-radius: 25px;
 
 }
+
 .container {
 	width: none;
 }
@@ -76,14 +78,3 @@ button:hover {
 	padding-right: 40px;
 }
 
-/* .portrait {
-	max-width: 30%;
-	display:flex;
-	min-width: 150px;
-	max-width: 159px;
-    min-height: 200px;
-    max-height: 200px;
-    color: white;
-    align-self: left;
-    margin-top:30px;
-} */
