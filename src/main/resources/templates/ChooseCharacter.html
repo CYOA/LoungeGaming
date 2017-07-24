@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
-<title>Choose Your Character</title>
-<link rel="stylesheet" type="text/css" href="chooseCharacter.css" />
+<link href="CSS/ChooseCharacter.css" rel="stylesheet"></link>
 </head>
 <body>
-	<img th:src="@{/images/CharacterPage.svg}" class="backgroundImage"></img>
+<div class="dialogue_box">                                                             
+   <div class="textbox">                      
+    <h1>Pick your Character</h1>
+    </div>
+   
+</div>
 	<div class="container">
-		<div class="wrapper">
-			<button class="button">
-				<a th:href="@{/nameCharacter}">Choose Me!</a>
-			</button>
+		<img th:src="@{/images/Knight.svg}" class="image" style="width: 100%"></img>
+	<img th:src="@{/images/Wizard.svg}" class="image1" style="width: 100%"></img>
+		<div class="middle">
+			<button class="button"><a th:href="@{/nameCharacter}">Choose Me!</a></button>
 		</div>
 	</div>
+
 </body>
 </html>

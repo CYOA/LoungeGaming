@@ -1,6 +1,6 @@
 
 body {
-	background: url(/images/CharacterChoice.svg) no-repeat center center fixed;
+	background: url(/images/CharacterPageWithoutPeople.svg) no-repeat center center fixed;
 	background-size: strecth;
 	background-position: 200 -200px;
 }
@@ -39,6 +39,34 @@ button:hover {
     border-radius: 25px;
 
 }
+.container {
+	width: none;
+}
+
+.image {
+	position: fixed;
+	top: 190px;
+	left: -280px;
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: 600px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.image1 {
+	position: fixed;
+	top: 340px;
+	left: -80px;
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: 390px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
 .textbox {
 	display: flex;
 	align-self: flex-start;

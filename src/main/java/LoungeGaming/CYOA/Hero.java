@@ -32,6 +32,8 @@ public class Hero {
     	this.dialogue1 = dialogue1;
     	this.imageUrl = imageUrl;
     }
+    
+
 
 public Hero(String heroName) {
 		this.heroName=heroName;
