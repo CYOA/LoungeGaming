@@ -1,6 +1,5 @@
 body { 
-  background: url(/images/CharacterStartGame1.jpg) no-repeat center center fixed; 
-/*   background: url(/images/CharacterStartGame.svg) no-repeat center center fixed */; 
+  background: url(/images/CharacterStartGame1.jpg) no-repeat center center fixed;  
   background-size: cover;
   background-position: 200 -200px;
 }

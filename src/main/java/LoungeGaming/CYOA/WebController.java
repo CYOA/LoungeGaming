@@ -47,7 +47,7 @@ public class WebController {
 		// Narrator2 text should replace Narrator text after a short period of
 		// time
 		model.addAttribute("narrator1", npcRepo.findOne((long) 1));
-
+    
 		return "Intro";
 	}
 
