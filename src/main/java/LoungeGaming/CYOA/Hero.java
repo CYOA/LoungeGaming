@@ -8,9 +8,9 @@ import javax.persistence.Id;
 public class Hero {
 	
 	@Id
-	private long id;
+	private long id = 1;
 	
-	private String name;
+	public String heroName;
 	private String dialogue1;
 	private String imageUrl;
 	
@@ -25,23 +25,25 @@ public class Hero {
     	
     }
     
-    public Hero(long id, String name, int hp, String dialogue1, String imageUrl) {
+    public Hero(long id, String heroName, int hp, String dialogue1, String imageUrl) {
     	this.id = id;
-    	this.name = name;
+    	this.heroName = heroName;
     	this.hp = hp;
     	this.dialogue1 = dialogue1;
     	this.imageUrl = imageUrl;
     }
     
-    public Hero(String name){
-    	this.name = name;
-    }
+
+
+public Hero(String heroName) {
+		this.heroName=heroName;
+	}
 
 /*****************************
  * Get Methods
  *****************************/
-	public String getName() {
-		return name;
+	public String getHeroName() {
+		return heroName;
 	}
 
 	public int getHp() {
