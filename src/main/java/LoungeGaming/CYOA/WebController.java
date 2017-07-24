@@ -35,31 +35,31 @@ public class WebController {
 
 	}
 
-
 	@RequestMapping("/nameCharacter")
 	public String chooseName(Model model) {
 		model.addAttribute("hero", heroRepo.findAll());
 		return "nameCharacter";
 
 	}
-
 	@RequestMapping("/intro")
 	public String displayIntro(Model model) {
 		model.addAttribute("narrator0", npcRepo.findOne((long) 0));
 		// Narrator2 text should replace Narrator text after a short period of
 		// time
 		model.addAttribute("narrator1", npcRepo.findOne((long) 1));
+    
 		return "Intro";
-	
 	}
 
 	@RequestMapping("/addHero")
-	public String createHero(@RequestParam(value = "heroName") String heroName) {
+	public String createHero(@RequestParam(value = "heroName") String heroName, Model model) {
 		Hero hero = new Hero(heroName);
 		heroRepo.save(hero);
+		model.addAttribute("hero", heroRepo.findOne((long) 1));
 		return "redirect:/startQuest";
 
 	}
+
 
 	@RequestMapping("/chooseCharacter")
 	public String retrieveHero(Model model) {
@@ -73,5 +73,12 @@ public class WebController {
 		return "StartQuest";
 	}
 
+	@RequestMapping("/destination")
+	public String chooseDestination(Model model) {
+		model.addAttribute("hero", heroRepo.findAll());
+		return "Destination";
 
+	
+}
+	
 }
