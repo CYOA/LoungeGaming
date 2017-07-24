@@ -3,28 +3,28 @@
 <head>
 
 
-    <title>Name Your Character</title>
-     <link rel="stylesheet" type="text/css" href="CSS/nameCharacter.css"></link>
-     <script type="text/javascript" src = "characterName.js"></script>
-  <title>Name Your Character</title>
-     <link rel="stylesheet" type="text/css" href="CSS/nameCharacter.css"></link>
- </head>
+   <title>Name Your Character</title>
+    <link rel="stylesheet" type="text/css" href="CSS/nameCharacter.css"></link>
+    <script type="text/javascript" src = "characterName.js"></script>
+ <title>Name Your Character</title>
+    <link rel="stylesheet" type="text/css" href="CSS/nameCharacter.css"></link>
+</head>
 <body>
 <div class="dialogue_box">                                          
-                         
-   <div class="textbox">                      
+                       
+  <div class="textbox">                      
+     
+   <form method="POST">
+           <input type="hidden" name="id" th:value="${hero}" /> <label>What would you like to name your character?
+               <input type="text" name="heroName" maxlength ='25' />
+           </label>
+           <p></p>
+           <button id="submit" th:formaction="@{/startQuest}">Submit Name</button>
+       </form>
        
-    <form method="POST">
-            <input type="hidden" name="id" th:value="${hero}" /> <label>What would you like to name your character?
-                <input type="text" name="heroName" maxlength ='25' />
-            </label>
-            <p></p>
-            <button id="submit" th:formaction="@{/startQuest}">Submit Name</button>
-        </form>
-        
-    </div>
+   </div>
 </div>
-   <div class="container">
+  <div class="container">
 <img th:src="@{/images/Knight.svg}" class="image" style="width: 100%"></img>
 </div>
 </body>

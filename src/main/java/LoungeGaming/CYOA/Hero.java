@@ -17,11 +17,29 @@ public class Hero {
 	// "health points" or "hit points"
 	private int hp;
 
-	/**************************
-	 * Constructors
-	 *************************/
 
-	public Hero() {
+
+	
+/**************************
+ * Constructors
+ *************************/
+	
+    public Hero() {
+    	
+    }
+    
+    public Hero(long id, String heroName, int hp, String dialogue1, String imageUrl) {
+    	this.id = id;
+    	this.heroName = heroName;
+    	this.hp = hp;
+    	this.dialogue1 = dialogue1;
+    	this.imageUrl = imageUrl;
+    }
+    
+
+
+public Hero(String heroName) {
+		this.heroName=heroName;
 
 	}
 
