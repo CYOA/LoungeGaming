@@ -1,6 +1,11 @@
 body { 
+<<<<<<< HEAD
   background: url(/images/CharacterStartGame1.jpg) no-repeat center center fixed; 
   background-size:100%;
+=======
+  background: url(/images/CharacterStartGame1.jpg) no-repeat center center fixed;  
+  background-size: cover;
+>>>>>>> e8499ea0ef8f4d69e9333fc25ccd565699387299
   background-position: 200 -200px;
   
 }
