@@ -56,3 +56,7 @@ button {
 	font-size: 25px;
 	background-color: #D4AF6A;
 }
+
+button:hover {
+	background-color: #FFE1AA
+}
