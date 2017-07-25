@@ -1,6 +1,8 @@
 
 body {
 	background: #dddddd;
+		font-family: 'VT323', monospace;
+	font-size: 20px;
 }
 .dialogue_box {
     min-width: 500px;
@@ -19,7 +21,7 @@ body {
     margin-right: 250px;
     padding-left: 30px;
     box-shadow: 15px 15px 10px #282929;
-    border: 3px dashed black;
+    border: 4px dashed black;
     border-radius: 25px;
 
 }
