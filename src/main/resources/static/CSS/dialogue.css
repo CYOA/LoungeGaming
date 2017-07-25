@@ -25,9 +25,7 @@ body {
     border-radius: 25px;
 
 }
-a {
-    margin-left: 75%;
-}
+
 .textbox {
 display: flex;
     align-self: flex-start;
