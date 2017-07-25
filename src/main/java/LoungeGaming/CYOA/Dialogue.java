@@ -6,6 +6,8 @@ import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import org.springframework.test.web.servlet.ResultMatcher;
+
 @Entity
 public class Dialogue {
 	
@@ -34,4 +36,6 @@ public Dialogue(Npc npc, long id, String content) {
 
 public Dialogue () {
 }
+
+
 }

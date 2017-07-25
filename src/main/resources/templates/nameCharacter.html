@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="CSS/nameCharacter.css" rel="stylesheet"></link>
+<title>Name Your Character</title>
+<link rel="stylesheet" type="text/css" href="CSS/nameCharacter.css"></link>
+<script type="text/javascript" src="characterName.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"></link>
 </head>
 <body>
-	<div class="dialogue_box">
-		<div class="textbox">
-			<h1>
-				Name Your Character
-
-			</h1>
-		</div>
-
-	</div>
-	<div class="container">
-		<img th:src="@{/images/Knight.svg}" class="image" style="width: 100%"></img>
-
-		<div class="middle">
-			<button class="button">
-				<a th:href="@{/#}">Start Your Quest!</a>
-			</button>
-		</div>
-	</div>
-
-<script src="naming.js"></script>
+    <div class="dialogue_box">
+        <div class="textbox">
+            <form method="POST">
+                <input type="hidden" name="id" th:value="${hero}" /> <label>What
+                    would you like to name your character? <input type="text"
+                    name="heroName" maxlength='25' />
+                </label>
+                <p></p>
+                <button id="submit" th:formaction="@{/startQuest}">Submit
+                    Name</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <img th:src="@{/images/Knight.svg}" class="image" style="width: 100%"></img>
+    </div>
 </body>
 </html>
