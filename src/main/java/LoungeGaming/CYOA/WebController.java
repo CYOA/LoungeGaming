@@ -80,57 +80,5 @@ public class WebController {
 
 	
 }
- 
-/********************************
- * Forest Event RequestMapping
- *********************************/
-	
-	@RequestMapping("/forestSetting")
-	public String displayForestExpo(Model model) {
-		return "forestSetting";
-	}
-	
-	@RequestMapping("/forestEventA")
-	public String displayForestEventA(Model model) {
-		return "forestEventA";
-	}
-	
-		@RequestMapping("/forestEventAcamp")
-		public String displayForestEventAcamp(Model model) {
-			return "forestEventAcamp";
-		}
-	
-		@RequestMapping("/forestEventApush")
-		public String displayForestEventApush(Model model) {
-			return  "forestEventApush";
-		}
-	
-	@RequestMapping("/forestEventB")
-	public String displayForestEventB(Model model) {
-		return "forestEventB";
-	}
-	
-		@RequestMapping("/forestEventBfight")
-		public String displayForestEventBfight(Model model) {
-			return "forestEventBfight";
-		}
-	
-		@RequestMapping("/forestEventBflee")
-		public String displayForestEventBflee(Model model) {
-			return "forestEventBflee";
-		}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }
