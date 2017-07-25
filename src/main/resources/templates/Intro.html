@@ -4,26 +4,28 @@
 
 <title>Intro Page</title>
 <link href="CSS/introStyle.css" rel="stylesheet"></link>
-<link href="dialogue.css" rel="stylesheet"></link>
+<link href="CSS/textBoxNoPortrait.css" rel="stylesheet"></link>
 </head>
 <body>
+<h2>In a small village outside the city</h2>
 <div class="dialogue_box">                                          
                      
+<!--    <div class="portrait">
+   <img src="elder.png"></img>
+   </div> -->
    
-   <div class="textbox"> 
-       <marquee LOOP="1" SCROLLAMOUNT="4" onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" direction="up" height=".textbox.height" width="dialogue_box.width" scrolldelay="0">                     
-    		<p th:each = "current: ${narrator0.dialogues}" th:text= "${current.content}"></p>
-     		<span class="wrap"></span>
- 		</marquee>
-    </div>
+   <div class="textbox">                      
 
+    <h4><p th:each = "current: ${narrator0.dialogues}" th:text= "${current.content}"></p></h4>
+
+    </div>
    
 </div>
 
 <!-- <p th:each = "current: ${narrator.dialogues}" th:text= "${current.content}"></p> -->
-
+<div class="container">
 <a th:href="@{/chooseCharacter}"><button class = "continue">Continue</button></a>
-
-
+</div>
+<!-- <img th:src="@{/images/FarAwayTown.svg}" class="backgroundImage"></img> -->
 </body>
 </html>
