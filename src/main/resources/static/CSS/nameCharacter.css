@@ -4,6 +4,7 @@ body {
 	background: url(/images/CharacterPageWithoutPeople.svg) no-repeat center center fixed;
 	background-size: strecth;
 	background-position: 200 -200px;
+	font-family: 'VT323', monospace;
 }
 
 button {
@@ -36,7 +37,7 @@ button:hover {
     margin-right: 400px;
     padding-left: 30px;
     box-shadow: 15px 15px 10px #282929;
-    border: 3px dashed black;
+    border: 4px dashed black;
     border-radius: 25px;
 
 }
@@ -76,5 +77,10 @@ button:hover {
     margin: auto;
     margin-left: 30px;
 	padding-right: 40px;
+	font-family: 'VT323', monospace;
+}
+form {
+font-family: 'VT323', monospace;
+font-size: 30px;
 }
 
