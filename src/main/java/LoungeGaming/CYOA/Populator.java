@@ -33,8 +33,8 @@ public class Populator implements CommandLineRunner {
 		npcRepo.save(narrator);
 		
 		
-		Dialogue introPage = new Dialogue(narrator,	2, "Word is ringing out from the Great City "
-				+ "that an ominous gate has appeared in the center of the city. As people gathered "
+		Dialogue introPage = new Dialogue(narrator,	2, "In a small village on the outskirts of the Great City, word has arrived "
+				+ "that an ominous gate has appeared. As people gathered "
 				+ "to marvel, a single figure stepped forth from the gate. Cloaked and forboding, "
 				+ "he declared the world would end in seven days.");
 		dialogueRepo.save(introPage);

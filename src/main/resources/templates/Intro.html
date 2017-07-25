@@ -4,20 +4,27 @@
 
 <title>Intro Page</title>
 <link href="CSS/introStyle.css" rel="stylesheet"></link>
-<link href="CSS/textBoxNoPortrait.css" rel="stylesheet"></link>
+<link href="CSS/dialogue.css" rel="stylesheet"></link>
+ <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"></link>
 </head>
 <body>
-<h2>In a small village outside the city</h2>
 <div class="dialogue_box">                                          
-                     
-<!--    <div class="portrait">
-   <img src="elder.png"></img>
-   </div> -->
+                    
    
    <div class="textbox">                      
+   		 <marquee LOOP="1" SCROLLAMOUNT="4" onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" direction="up" height=".textbox.height" width="dialogue_box.width" scrolldelay="0">
 
-    <h4><p th:each = "current: ${narrator0.dialogues}" th:text= "${current.content}"></p></h4>
+   			 Word is ringing out from the Great City that an ominous gate has appeared in the center of the city. As people gathered to marvel, a single figure stepped forth from the gate. Cloaked and forboding, he declared the world would end in seven days....
 
+         In a small village outside the city, a village elder gathers everyone together to share the grim news. While he seems resigned to their fate, there is one villager who is not...
+
+         Word is ringing out from the Great City that an ominous gate has appeared in the center of the city. As people gathered to marvel, a single figure stepped forth from the gate. Cloaked and forboding, he declared the world would end in seven days....
+
+         In a small village outside the city, a village elder gathers everyone together to share the grim news. While he seems resigned to their fate, there is one villager who is not...
+   			 <span class="wrap"></span>
+ 			 </marquee>
+ <!--    <h4><p th:each = "current: ${narrator0.dialogues}" th:text= "${current.content}"></p></h4>
+ -->
     </div>
    
 </div>
@@ -26,6 +33,6 @@
 <div class="container">
 <a th:href="@{/chooseCharacter}"><button class = "continue">Continue</button></a>
 </div>
-<!-- <img th:src="@{/images/FarAwayTown.svg}" class="backgroundImage"></img> -->
-</body>
+<!-- <img th:src="@{/images/FarAwayTown.svg}" class="backgroundImage"></img>
+ --></body>
 </html>
