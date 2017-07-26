@@ -109,6 +109,6 @@ button:hover {
     }
 }
 img.fireimage {
-    animation: blink 5s;
+    animation: blink 3s;
     animation-iteration-count: infinite;
 }
