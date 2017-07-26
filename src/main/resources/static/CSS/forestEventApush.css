@@ -4,10 +4,7 @@ body {
 	background-position: 200 -200px;
 }
 
-/* .container a {
-	text-decoration: none;
-}
- */
+/* 
 button.continue {
 	background-color: #E8CADB;
 	border-radius: 8px;
@@ -25,7 +22,7 @@ button.submit {
 
 button:hover {
 	background-color: #974272;
-}
+} */
 
 .dialogue_box {
 	min-width: 500px;
@@ -82,4 +79,21 @@ button:hover {
 	transition: .5s ease;
 	backface-visibility: hidden;
 	margin: 0px;
+}
+
+.continue {
+	margin-top: 50px;
+}
+
+.continueAnchor {
+	margin-left: 470px;
+}
+
+button {
+	font-size: 25px;
+	background-color: #D4AF6A;
+}
+
+button:hover {
+	background-color: #FFE1AA
 }
