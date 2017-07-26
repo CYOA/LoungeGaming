@@ -7,11 +7,7 @@ body {
 	background-position: 50 -50px;
 }
 
-/*  .container .image {
-	position: relative;
-	top: 350px; 
-	left: -100px;
-} */
+
 .container {
 	width: none;
 }
@@ -79,7 +75,7 @@ a:link {
 .dialogue_box {
 	max-width: 500px;
 	max-height: 260px;
-	background: rgba(255, 198, 179, .85);
+    background: rgba(255,230,230,.85);
 	color: black;
 	display: flex;
 	font-family: 'VT323', monospace;
@@ -93,7 +89,7 @@ a:link {
 	margin-right: 290px;
 	padding-left: 30px;
 	box-shadow: 15px 15px 10px #282929;
-	border: 3px dashed black;
+	border: 4px dashed black;
 	border-radius: 25px;
 }
 

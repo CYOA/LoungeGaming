@@ -41,13 +41,14 @@ public class WebController {
 		return "nameCharacter";
 
 	}
+
 	@RequestMapping("/intro")
 	public String displayIntro(Model model) {
 		model.addAttribute("narrator0", npcRepo.findOne((long) 0));
 		// Narrator2 text should replace Narrator text after a short period of
 		// time
 		model.addAttribute("narrator1", npcRepo.findOne((long) 1));
-    
+
 		return "Intro";
 	}
 
@@ -59,7 +60,6 @@ public class WebController {
 		return "redirect:/startQuest";
 
 	}
-
 
 	@RequestMapping("/chooseCharacter")
 	public String retrieveHero(Model model) {
@@ -77,38 +77,37 @@ public class WebController {
 	public String chooseDestination(Model model) {
 		model.addAttribute("hero", heroRepo.findAll());
 		return "Destination";
+	}
 
-	
-}
- 
-/********************************
- * Forest Event RequestMapping
- *********************************/
-	
+	/********************************
+	 * Forest Event RequestMapping
+	 *********************************/
+
 	@RequestMapping("/forestSetting")
 	public String displayForestExpo(Model model) {
 		return "forestSetting";
 	}
-	
+
 	@RequestMapping("/forestEventA")
 	public String displayForestEventA(Model model) {
 		return "forestEventA";
 	}
-	
-		@RequestMapping("/forestEventAcamp")
-		public String displayForestEventAcamp(Model model) {
-			return "forestEventAcamp";
-		}
-	
-		@RequestMapping("/forestEventApush")
-		public String displayForestEventApush(Model model) {
-			return  "forestEventApush";
-		}
-	
+
+	@RequestMapping("/forestEventAcamp")
+	public String displayForestEventAcamp(Model model) {
+		return "forestEventAcamp";
+	}
+
+	@RequestMapping("/forestEventApush")
+	public String displayForestEventApush(Model model) {
+		return "forestEventApush";
+	}
+
 	@RequestMapping("/forestEventB")
 	public String displayForestEventB(Model model) {
 		return "forestEventB";
 	}
+
 	
 		@RequestMapping("/forestEventBfight")
 		public String displayForestEventBfight(Model model) {
@@ -164,4 +163,3 @@ public class WebController {
 	
 	
 	
-}
