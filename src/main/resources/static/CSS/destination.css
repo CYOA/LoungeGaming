@@ -118,6 +118,14 @@ h2 {
 p {
 	text-align: center;
 }
+a:visited {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+a:link {
+    color: #FFFFFF;
+    font-weight: bold;
+}
 /* Modal Content */
 #myModal, #myModal2 {
 	background-color: #fefefe;
