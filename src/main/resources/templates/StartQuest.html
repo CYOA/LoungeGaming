@@ -7,28 +7,26 @@
 
 </head>
 <body>
-
 	<div class="dialogue_box">
-		<div class="portrait">
-			<img src="/images/elder.png"></img>
-		</div>
-
 		<div class="textbox">
 
-			<h1>
-				<a class="typewrite" data-period="2000"
-					data-type='[ "Thank you Sir Knight for volunteering to help us in this great
-					time of peril. You must head to the city to help save up. You may choose the forest path
-					to arrive quicker but danger looms inside. Or you can choose the Countryside path which
-					will be safer but you will lose time off of our looming deadline. Choose wisely..." ]'>
-					<span class="wrap"></span>
-				</a>
-			</h1>
+			<marquee LOOP="1" SCROLLAMOUNT="4" onmouseover="this.stop();"
+				onmouseout="this.start();" behavior="scroll" direction="up"
+				height=".textbox.height" width="dialogue_box.width" scrolldelay="1">
+
+				Thank you Sir Knight for volunteering to help us in this great time
+				of peril. You must head to the city to help save up. You may choose
+				the forest path to arrive quicker but danger looms inside. Or you
+				can choose the Countryside path which will be safer but you will
+				lose time off of our looming deadline. Choose wisely... <span
+					class="wrap"></span>
+			</marquee>
 
 
 		</div>
 
 	</div>
+
 	<div class="container">
 		<img th:src="@{/images/Knight.svg}" class="image1" style="width: 100%"></img>
 		<div class="middle">
@@ -39,6 +37,6 @@
 	</div>
 
 
-	<script src="/JS/textbox.js"></script>
+	<script src="textbox.js"></script>
 </body>
 </html>
