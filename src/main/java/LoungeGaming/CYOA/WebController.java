@@ -121,12 +121,15 @@ public class WebController {
 		}
 	
 	
+/***********************
+ * Countryside Event
+ ************************/
 	
-	
-	
-	
-	
-	
+	@RequestMapping("/countrysideSetting")
+	public String displayCountrysideSetting(Model model) {
+		return "countrysideSetting";
+	}
+
 	
 	
 	
