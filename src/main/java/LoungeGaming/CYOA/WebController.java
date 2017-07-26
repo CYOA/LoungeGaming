@@ -108,15 +108,30 @@ public class WebController {
 		return "forestEventB";
 	}
 
-	@RequestMapping("/forestEventBfight")
-	public String displayForestEventBfight(Model model) {
-		return "forestEventBfight";
+	
+		@RequestMapping("/forestEventBfight")
+		public String displayForestEventBfight(Model model) {
+			return "forestEventBfight";
+		}
+	
+		@RequestMapping("/forestEventBflee")
+		public String displayForestEventBflee(Model model) {
+			return "forestEventBflee";
+		}
+	
+	
+/***********************
+ * Countryside Event
+ ************************/
+	
+	@RequestMapping("/countrysideSetting")
+	public String displayCountrysideSetting(Model model) {
+		return "countrysideSetting";
 	}
 
-	@RequestMapping("/forestEventBflee")
-	public String displayForestEventBflee(Model model) {
-		return "forestEventBflee";
-	}
-
-
-}
+	
+	
+	
+	
+	
+	
