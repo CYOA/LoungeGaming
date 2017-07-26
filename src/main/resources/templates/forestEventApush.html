@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forest Push</title>
+<link rel="stylesheet" type="text/css" href="CSS/forestEventAcamp.css"></link>
+<link href="https://fonts.googleapis.com/css?family=VT323"
+	rel="stylesheet"></link>
+</head>
+<body>
+
+	<div class="dialogue_box">
+		<div class="textbox">
+
+			<marquee LOOP="1" SCROLLAMOUNT="4" onmouseover="this.stop();"
+				onmouseout="this.start();" behavior="scroll" direction="up"
+				height=".textbox.height" width="dialogue_box.width" scrolldelay="0">
+
+				You have chosen to push through the forest. Good choice because of
+				your looming deadline. Make sure to keep your guard up in case you
+				come across anything that goes bump in the night. You suddenly hear
+				rustling coming from the dense forest. But where OR who is it coming
+				from... <span class="wrap"></span>
+			</marquee>
+
+
+		</div>
+
+	</div>
+	<div class="hero">
+		<img th:src="@{/images/Knight.svg}" class="image" style="width: 88%"></img>
+	</div>
+	<div class="container">
+		<button class="continue">
+			<a th:href="@{/wolf}">Continue</a>
+		</button>
+	</div>
+</body>
+</html>

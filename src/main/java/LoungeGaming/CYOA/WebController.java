@@ -102,6 +102,11 @@ public class WebController {
 	public String displayForestEventApush(Model model) {
 		return "forestEventApush";
 	}
+	
+	@RequestMapping("/wolf")
+	public String displayWolf(Model model) {
+		return "wolf";
+	}
 
 	@RequestMapping("/forestEventB")
 	public String displayForestEventB(Model model) {
@@ -110,7 +115,7 @@ public class WebController {
 
 	@RequestMapping("/forestEventBfight")
 	public String displayForestEventBfight(Model model) {
-		return "forestEventBfight";
+		return "forestEventBfight"; 
 	}
 
 	@RequestMapping("/forestEventBflee")

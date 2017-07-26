@@ -32,7 +32,14 @@ body {
 	margin-left: 30px;
 	padding-right: 40px;
 }
-
+a:visited {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+a:link {
+    color: #FFFFFF;
+    font-weight: bold;
+}
 /* Three columns side by side */
 .column {
 	float: left;
