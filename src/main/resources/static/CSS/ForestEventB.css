@@ -3,7 +3,6 @@ body {
 	font-family: 'VT323', monospace;
 	font-size: 20px;
 }
-
 .dialogue_box {
 	min-width: 400px;
 	min-height: 160px;
@@ -99,7 +98,7 @@ img {
 	display: inline-block;
 	padding: 8px;
 	color: white;
-	background-color: #734d26;
+	background-color: #5e225e;
 	text-align: center;
 	cursor: pointer;
 	width: 100%;
@@ -117,14 +116,6 @@ h2 {
 
 p {
 	text-align: center;
-}
-a:visited {
-    color: #FFFFFF;
-    font-weight: bold;
-}
-a:link {
-    color: #FFFFFF;
-    font-weight: bold;
 }
 /* Modal Content */
 #myModal, #myModal2 {
@@ -156,7 +147,7 @@ a:link {
 	display: inline-block;
 	padding: 8px;
 	color: white;
-	background-color: #734d26;
+	background-color: #5e225e;
 	text-align: center;
 	cursor: pointer;
 	width: 100%;
