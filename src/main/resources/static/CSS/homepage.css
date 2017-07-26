@@ -1,7 +1,7 @@
 body { 
-  background: url(/images/CastleHomePage.svg) no-repeat center center fixed; 
-  background-size: stretch;
-  background-position: 200 -200px;
+  background: url(/images/CastleHomePage.jpg) no-repeat center center; 
+	background-size: 100%;
+  background-position: 0px 4px;
 }
 
 .container {
@@ -20,5 +20,21 @@ button:hover {
 	background-color: #f2f4f3;
 }
 
+.flag1 {
+    position: fixed;
+    top: 156px;
+    right: 578px;
+    opacity: 1;
+    width: 78px;
+    height: 83px;
+    z-index: -1;
+      background: url('/images/flaganimation.png') left center;
+      animation:  play 0.7s steps(6) infinite;
+      animation-fill-mode: forwards;
+      
+    
+}
 
-
+@keyframes play {
+  100% { background-position: -1622px; }
+ }
