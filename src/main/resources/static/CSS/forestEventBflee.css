@@ -47,14 +47,27 @@ display: flex;
     background: transparent;  /* optional: just make scrollbar invisible */
 }
 
+/* .knight {
+  position: fixed;
+  top: 350px;
+  right: 830px;
+  opacity: 1;
+  width: 250px;
+  height: 200px;
+  z-index: -1;
+    background: url('/images/knightdead.png') left center;
+    animation:  play 0.8s steps(6) infinite;
+    animation-fill-mode: forwards;
+} */
+
 .image {
     position: fixed;
-    top: 300px;
+    top: 380px;
     left: 30px;
     opacity: 1;
     display: block;
-    width: 250px;
-    height: 250px; 
+    width: 270px;
+    height: 190px; 
     transition: .5s ease;
     backface-visibility: hidden;	
 	
@@ -71,7 +84,7 @@ display: flex;
     transition: .5s ease;
     backface-visibility: hidden;	
 	
-} 
+}  
 
 button.continue {
 	background-color: #E8CADB;
@@ -81,4 +94,13 @@ button.continue {
 	margin: auto;
 	margin-top: 200px;
 	color: black;
+}
+
+button.submit {
+	font-size: 17px;
+	color: #553700;
+}
+
+button:hover {
+	background-color: #974272;
 }

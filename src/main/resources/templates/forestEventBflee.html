@@ -3,6 +3,7 @@
 <head>
     <title>FOREST EVENT B FLEE</title>
     <link rel="stylesheet" type="text/css" href="CSS/forestEventBflee.css"></link>
+  
  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"></link> 
 </head>
 <body>
@@ -12,7 +13,10 @@
 
    			 <marquee LOOP="1" SCROLLAMOUNT="4" onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" direction="up" height=".textbox.height" width="dialogue_box.width" scrolldelay="0">
 
-   			 Oh no Wolf ! Wolf ! 
+   			 Fight or flee. I vote for flee. There's no way I am going to tangle with him!  Where there is one wolf there are sure to be more.
+   			 
+
+
    			 <span class="wrap"></span>
  			 </marquee>
  			  			
@@ -25,10 +29,17 @@
  
  </div>
  
- <div>
-  <img th:src="@{/images/Knight.png}" class="image1"></img>
+ <div class= "knight">
  
+  <img th:src="@{/images/Knight.png}" class="image1"></img>
+  
  </div>
  <button class = "continue">Continue</button>
+ <script src="/JS/forestEventBflee.js"></script>
+ 
+ 
+ 
+ 
+ 
 </body>
 </html>
