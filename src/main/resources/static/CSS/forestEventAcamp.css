@@ -4,20 +4,25 @@ body {
 	background-position: 200 -200px;
 }
 
+/* .container a {
+	text-decoration: none;
+}
+ */
 button.continue {
 	background-color: #E8CADB;
 	border-radius: 8px;
 	font-size: 40px;
 	display: block;
 	margin: auto;
-	margin-top: 170px;
+	margin-top: 300px;
 	color: black;
 }
 
-/* button.submit {
+button.submit {
 	font-size: 17px;
 	color: #553700;
-} */
+}
+
 button:hover {
 	background-color: #974272;
 }
@@ -61,4 +66,20 @@ button:hover {
 ::-webkit-scrollbar {
 	width: 0px; /* remove scrollbar space */
 	background: transparent; /* optional: just make scrollbar invisible */
+}
+
+/* .hero {
+	width: none;
+} */
+.image {
+	position: fixed;
+	top: 189px;
+	left: -480px;
+	opacity: 1;
+	display: block;
+	width: 300px;
+	height: 500px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	margin: 0px;
 }
