@@ -1,0 +1,18 @@
+.knight {
+    position: fixed;
+    top: 350px;
+    right: 830px;
+    opacity: 1;
+    width: 262px;
+    height: 189px;
+    z-index: -1;
+      background: url('/images/knightdead.png') left center;
+      animation: knight play 0.8s steps(4) 1;
+      animation-fill-mode: forwards;
+      
+    
+}
+
+@keyframes 'knight' {
+   100% { background-position: -1148px; }
+}
