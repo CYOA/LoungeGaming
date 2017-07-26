@@ -1,7 +1,7 @@
 body {
-	background: url(/images/IntroStoryPageWithoutPeople.svg) no-repeat center center fixed; 
-	background-size: stretch;
-	background-position: 200 -200px; 
+  background: url(/images/IntroStoryPageWithoutPeople.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  background-position: 200 -200px;
 }
 
 button {
