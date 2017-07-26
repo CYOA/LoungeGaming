@@ -1,62 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<<<<<<< HEAD
 <title>Name Your Character</title>
 <link rel="stylesheet" type="text/css" href="CSS/nameCharacter.css"></link>
 <script type="text/javascript" src="characterName.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"></link>
 
 </head>
 <body>
-
-	<div class="dialogue_box">
-		<!-- <div class="container">
-			<img th:src="@{/images/Knight.svg}" class="image" style="width: 100%"></img> -->
-
-			<div class="textbox">
-
-				<form method="POST">
-					<input type="hidden" name="id" th:value="${hero}" /> <label>What
-						would you like to name your character? <input type="text"
-						name="heroName" maxlength='25' />
-					</label>
-					<p></p>
-					<button id="submit" th:formaction="@{/addHero}">Submit
-						Name</button>
-				</form>
-			</div>
-
-		</div>
-	<!-- </div> -->
-
-
-=======
-
-   <title>Name Your Character</title>
-    <link rel="stylesheet" type="text/css" href="CSS/nameCharacter.css"></link>
-    <script type="text/javascript" src = "characterName.js"></script>
- <title>Name Your Character</title>
-    <link rel="stylesheet" type="text/css" href="CSS/nameCharacter.css"></link>
-</head>
-<body>
-<div class="dialogue_box">                                          
-                       
-  <div class="textbox">                      
-     
-   <form method="POST">
-           <input type="hidden" name="id" th:value="${hero}" /> <label>What would you like to name your character?
-               <input type="text" name="heroName" maxlength ='25' />
-           </label>
-           <p></p>
-           <button id="submit" th:formaction="@{/startQuest}">Submit Name</button>
-       </form>
-       
-   </div>
-</div>
-  <div class="container">
-<img th:src="@{/images/Knight.svg}" class="image" style="width: 100%"></img>
-</div>
->>>>>>> e8499ea0ef8f4d69e9333fc25ccd565699387299
+    <div class="dialogue_box">
+        <div class="textbox">
+            <form method="POST">
+                <input type="hidden" name="id" th:value="${hero}" /> <label>What
+                    would you like to name your character? <input type="text"
+                    name="heroName" maxlength='25' />
+                </label>
+                <p></p>
+                <button id="submit" th:formaction="@{/startQuest}">Submit
+                    Name</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <img th:src="@{/images/Knight.svg}" class="image" style="width: 100%"></img>
+    </div>
 </body>
 </html>
