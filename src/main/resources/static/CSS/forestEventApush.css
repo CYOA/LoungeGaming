@@ -4,26 +4,28 @@ body {
 	background-position: 200 -200px;
 }
 
-/* 
-button.continue {
-	background-color: #E8CADB;
-	border-radius: 8px;
-	font-size: 40px;
-	display: block;
-	margin: auto;
-	margin-top: 300px;
-	color: black;
-}
+button {
+	background-color: #D4AF6A;
 
-button.submit {
-	font-size: 17px;
+}
+button.continue{
+	border-radius:8px;
+	font-size: 40px;
 	color: #553700;
 }
 
 button:hover {
-	background-color: #974272;
-} */
+	background-color: #FFE1AA;
+}
 
+.container {
+	align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-left: 600px;
+
+}
 .dialogue_box {
 	min-width: 500px;
 	min-height: 200px;
@@ -65,9 +67,7 @@ button:hover {
 	background: transparent; /* optional: just make scrollbar invisible */
 }
 
-/* .hero {
-	width: none;
-} */
+
 .image {
 	position: fixed;
 	top: 189px;
@@ -79,21 +79,4 @@ button:hover {
 	transition: .5s ease;
 	backface-visibility: hidden;
 	margin: 0px;
-}
-
-.continue {
-	margin-top: 50px;
-}
-
-.continueAnchor {
-	margin-left: 470px;
-}
-
-button {
-	font-size: 25px;
-	background-color: #D4AF6A;
-}
-
-button:hover {
-	background-color: #FFE1AA
 }

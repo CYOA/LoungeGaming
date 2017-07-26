@@ -105,7 +105,7 @@ public class WebController {
 	
 	@RequestMapping("/wolf")
 	public String displayWolf(Model model) {
-		return "wolf";
+		return "Wolf";
 	}
 
 	@RequestMapping("/forestEventB")
