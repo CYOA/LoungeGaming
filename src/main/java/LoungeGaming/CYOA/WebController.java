@@ -130,8 +130,36 @@ public class WebController {
 		return "countrysideSetting";
 	}
 
+	@RequestMapping("/countrysideEventA")
+	public String displayCountrysideEventA(Model model) {
+		return "countrysideEventA";
+	}
+
+		@RequestMapping("/countrysideEventAApproach")
+		public String displayCountrysideEventAApproach(Model model) {
+			return "countrysideEventAAapproach";
+		}
 	
+		@RequestMapping("/countrysideEventAHide")
+		public String displayCountrysideEventAHide(Model model) {
+			return "countrysideEventAHide";
+		}
+
+	@RequestMapping("/countrysideEventB")
+	public String displayCountrysideEventB(Model model) {
+		return "countrysideEventB";
+	}
 	
+		@RequestMapping("/countrysideEventBFight")
+		public String displayCountrysideEventBFight(Model model) {
+			return "countrysideSetting";
+		}
+
+		@RequestMapping("/countrysideEventBTalk")
+		public String displayCountrysideEventBTalk(Model model) {
+			return "countrysideEventBTalk";
+		}
+
 	
 	
 	
