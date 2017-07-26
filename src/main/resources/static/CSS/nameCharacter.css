@@ -1,14 +1,14 @@
 
-
 body {
 	background: url(/images/CharacterPageWithoutPeople.svg) no-repeat center center fixed;
 	background-size: strecth;
 	background-position: 200 -200px;
 	font-family: 'VT323', monospace;
+
 }
 
 button {
-	background-color: #D4AF6A;
+	background-color: #E8CADB;
 
 }
 button.submit{
@@ -37,11 +37,10 @@ button:hover {
     margin-right: 400px;
     padding-left: 30px;
     box-shadow: 15px 15px 10px #282929;
-    border: 4px dashed black;
+    border: 3px dashed black;
     border-radius: 25px;
 
 }
-
 .container {
 	width: none;
 }
@@ -83,4 +82,5 @@ form {
 font-family: 'VT323', monospace;
 font-size: 30px;
 }
+
 

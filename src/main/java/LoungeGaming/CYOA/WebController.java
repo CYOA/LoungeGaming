@@ -77,7 +77,6 @@ public class WebController {
 	public String chooseDestination(Model model) {
 		model.addAttribute("hero", heroRepo.findAll());
 		return "Destination";
-
 	}
 
 	/********************************
@@ -118,5 +117,6 @@ public class WebController {
 	public String displayForestEventBflee(Model model) {
 		return "forestEventBflee";
 	}
+
 
 }
