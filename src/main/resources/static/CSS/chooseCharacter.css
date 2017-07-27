@@ -5,11 +5,17 @@ body {
 	min-height: 100%;
 	min-width: 1024px;
 	background-position: 50 -50px;
+	color: black;
 }
 
 
 .container {
 	width: none;
+	
+}
+
+a {
+text-decoration: none;
 }
 
 .image {
@@ -55,20 +61,23 @@ body {
 }
 
 .button {
-	background-color: #FF4000;
-	color: white;
+	background-color: #D4AF6A;
+	color: #553700;
 	font-size: 16px;
 	padding: 9px 9px;
 	border-radius: 25px;
 }
+button:hover {
+	background-color: #FFE1AA;
+}
 
 a:visited {
-	color: #FFFFFF;
+	color: #553700;
 	font-weight: bold;
 }
 
 a:link {
-	color: #FFFFFF;
+	color: black;
 	font-weight: bold;
 }
 

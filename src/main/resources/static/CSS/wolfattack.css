@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background: url(/images/ForestNight.jpg);
     background-size: cover; 
@@ -96,3 +97,103 @@ button:hover {
 
 * { color:black; text-decoration: none;}
 
+=======
+body {
+    background: url(/images/ForestNight.jpg);
+    background-size: cover; 
+}
+.dialogue_box {
+    min-width: 400px;
+    min-height: 200px;
+    background: rgba(255,230,230,.85);
+    color: black;
+    display: flex;
+	font-family: 'VT323', monospace;
+	flex-wrap: wrap;
+    font-size: 16px;
+  	flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 275px;
+    margin-right: 275px;
+    padding-left: 30px;
+    box-shadow: 15px 15px 10px #282929;
+    border: 4px dashed #001f35;
+    border-radius: 25px;
+
+}
+.textbox, #typewriter {
+	display: flex;
+	align-self: flex-start;
+	max-width: 100%;
+    max-height: 200px;
+    margin: auto;
+    margin-left: 30px;
+
+}
+
+.portrait img {
+	display:flex;
+	max-width: 200px;
+    max-height: 200px;
+    color: white;
+    align-self: left;
+    margin-top: 10px;
+}
+
+.wolf {
+	margin-left: 22%;
+	margin-top: 30px;
+	position: fixed;
+  width: 250px;
+  height: 200px;
+  background: url('/images/wolfattack.png') left center;
+  animation: play 0.8s steps(6) infinite;
+ z-index: 5;
+  
+}
+
+button {
+	background-color: #D4AF6A;
+
+}
+button.continue{
+	border-radius:8px;
+	font-size: 40px;
+	color: #553700;
+}
+
+button:hover {
+	background-color: #FFE1AA;
+}
+
+.container {
+	align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.knight {
+    position: fixed;
+    top: 350px;
+    right: 830px;
+    opacity: 1;
+    width: 250px;
+    height: 200px;
+    z-index: -1;
+      background: url('/images/knightdead.png') left center;
+      animation:  play 0.8s steps(6) infinite;
+      animation-fill-mode: forwards;
+      
+    
+}
+
+@keyframes play {
+   100% { background-position: -1500px; }
+}
+
+* { color:black; text-decoration: none;}
+
+>>>>>>> wolf

@@ -4,22 +4,13 @@ body {
 	background-position: 200 -200px;
 }
 
-/* .container a {
-	text-decoration: none;
-}
- */
-button.continue  {
+button {
 	background-color: #D4AF6A;
-	border-radius: 8px;
-	font-size: 40px;
-	display: block;
-	margin: auto;
-	margin-top: 30px;
-	color: black;
-}
 
-button.submit {
-	font-size: 17px;
+}
+button.continue{
+	border-radius:8px;
+	font-size: 40px;
 	color: #553700;
 }
 
@@ -27,6 +18,14 @@ button:hover {
 	background-color: #FFE1AA;
 }
 
+.container {
+	align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-left: 0px;
+
+}
 .dialogue_box {
 	min-width: 500px;
 	min-height: 200px;
@@ -68,47 +67,16 @@ button:hover {
 	background: transparent; /* optional: just make scrollbar invisible */
 }
 
-/* .hero {
-	width: none;
-} */
+
 .image {
 	position: fixed;
-	top: 375px;
-	left: 230px;
+	top: 300px;
+	left: -25px;
 	opacity: 1;
 	display: block;
-	width: 150px;
-	height: 150px;
+	width: 140px;
+	height: 300px;
 	transition: .5s ease;
 	backface-visibility: hidden;
 	margin: 0px;
-}
-
-.fireimage {
-	position: fixed;
-	top: 413px;
-	right: 170px;
-	opacity: 1;
-	display: block;
-	width: 170px;
-	height: 130px;
-	transition: .5s ease;
-	backface-visibility: hidden;
-	margin: 0px;
-}
-
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-img.fireimage {
-    animation: blink 3s;
-    animation-iteration-count: infinite;
 }

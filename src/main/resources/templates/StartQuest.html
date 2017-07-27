@@ -6,36 +6,33 @@
 	rel="stylesheet"></link>
 
 </head>
-<body>
-	<div class="dialogue_box">
-		<div class="portrait">
-			<img src="elder.png"></img>
-		</div>
 
-		<div class="textbox">
+<div class="dialogue_box">                                          
+   <div class="portrait">
+   <img src="/images/elder.png"></img>
+   </div>
 
-			<h1>
-				<a class="typewriter" data-period="2000"
-					data-type='[ "Thank you Sir Knight for volunteering to help us in this great
-					time of peril. You must head to the city to help save up. You may choose the forest path
-					to arrive quicker but danger looms inside. Or you can choose the Countryside path which
-					will be safer but you will lose time off of our looming deadline. Choose wisely..." ]'>
-					<span class="wrap"></span>
-				</a>
-			</h1>
+   		<div class="textbox">                
 
-		</div>
-
-	</div>
-	<div class="container">
-		<img th:src="@{/images/Knight.svg}" class="image" style="width: 100%"></img>
+   			<h1>
+   			 <a class="typewriter" data-period="2000" data-type='[ "Thank you Sir Knight for volunteering to help us in this great time of peril. You must head to the city to help save up. You may choose the forest path to arrive quicker but danger looms inside. Or you can choose the Countryside path which will be safer but you will lose time off of our looming deadline. Choose wisely"  ]'> 
+   			 <span class="wrap"></span>
+ 			 </a>
+ 			 </h1>
+     			
+   		  
+   	 </div>
+   
+</div>
+<div class="container">
+		<img src="/images/Knight.svg" class="image" style="width: 100%"></img>
 		<div class="middle">
 			<button class="button">
-				<a th:href="@{/destination}">Start Your Quest!</a>
+				<a href="destination">Start Your Quest!</a>
 			</button>
 		</div>
 	</div>
-		<script th:inline="javascript"></script>
-	<script src="/JS/textbox.js"></script>
+	
+	<script src="../JS/textbox.js"></script>
 </body>
 </html>
