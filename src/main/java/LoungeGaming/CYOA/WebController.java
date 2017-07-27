@@ -70,7 +70,7 @@ public class WebController {
 	@RequestMapping("/startQuest")
 	public String startQuest(Model model) {
 		model.addAttribute("hero", heroRepo.findAll());
-		return "StartQuest";
+		return "StartQuest2";
 	}
 
 	@RequestMapping("/destination")

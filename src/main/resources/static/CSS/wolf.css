@@ -40,7 +40,7 @@ body {
     right: 900px;
     opacity: 1;
     display: block;
-    width: 150px;
+    width: 150px; 
     height: 150px;
     transition: .5s ease;
     backface-visibility: hidden;

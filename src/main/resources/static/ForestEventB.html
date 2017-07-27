@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="/CSS/destination.css"></link>
+<link rel="stylesheet" type="text/css" href="/CSS/ForestEventB.css"></link>
 <link href="https://fonts.googleapis.com/css?family=VT323"
 	rel="stylesheet">
 </link>
-<title>Destination Page</title>
+<title>Forest Event A</title>
 </head>
 <body>
 
 	<div class="menuContainer">
 		<div class="column">
 			<div class="card">
-				<img id="forest" src="/images/Forest.jpg" alt="Mike"
+				<img id="forest" src="/images/FightWolf.jpg" alt="fightwolf"
 					style="width: 100%"></img>
 				<div class="container">
-					<h2>Forest</h2>
-					<a th:href="@{/forestSetting}">
-					<button class="button">Go through the Forest</button></a>
+					<h2>Fight</h2>
+					<a href="/WolfAttack.html"><button class="button">
+						Stay and fight the wolf!
+					</button></a>
 					<br> </br>
 					<!-- Trigger/Open The Modal -->
 					<button id="myBtn">Elder Secret</button>
-					
+
 					<!-- The Modal -->
 					<div id="myModal" class="modal">
 
 						<!-- Modal content -->
 						<div class="modal-content">
 							<span class="close">&times;</span>
-							<p>The Forest path is dangerous but with your looming
-								deadline it may be the only solution from _____. Watch out for
-								predators and things that lurk in the night...</p>
+							<p>Choosing this option will have cities ringing your praise.
+								But there is also a chance you won't make it through the
+								fight...</p>
 						</div>
 					</div>
 
@@ -41,12 +42,13 @@
 	<div class="menuContainer">
 		<div class="column">
 			<div class="card">
-				<img id="forest" src="/images/Countryside.jpg" alt="Mike"
+				<img id="forest" src="/images/FleeWolf.jpg" alt="fleewolf"
 					style="width: 100%"></img>
 				<div class="container">
-					<h2>Countryside</h2>
-					<a th:href="@{/#}">
-					<button class="button">Go through the Countryside</button></a>
+					<h2>Flee</h2>
+					<button class="button">
+						<a href="/forestEventBflee.html">Run away from the fight</a>
+					</button>
 					<br> </br>
 					<!-- Trigger/Open The Modal -->
 					<button id="myBtn2">Elder Secret</button>
@@ -57,9 +59,8 @@
 						<!-- Modal content -->
 						<div class="modal-content">
 							<span class="close">&times;</span>
-							<p>The Countryside is a much safer path to take to get to the
-								____. The downside is that it will take up more time from your
-								deadline. Evil lurks everywhere though...</p>
+							<p>This is the safest bet to ensure your life. But keep in
+								might the forest is hard to navigate through at night...</p>
 						</div>
 					</div>
 
