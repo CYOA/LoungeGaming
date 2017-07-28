@@ -158,7 +158,10 @@ public class WebController {
 		public String displayCountrysideEventBTalk(Model model) {
 			return "countrysideEventBtalk";
 		}
-
+		@RequestMapping("/cityEventA")
+        public String displayCityEventA(Model model) {
+            return "cityEventA";
+        }
 	
 }
 	
