@@ -67,16 +67,28 @@ button:hover {
 	background-color: #FFE1AA;
 }
 
+@keyframes runKnight {
+	0% {left: -7%; }
+	100% {left: 12%;}	
+}
+
+.knight {
+	position: fixed;
+	/* first timing to adjust movement */
+	animation: 20s runKnight forwards 1s;
+	left: -7%;
+}
+
 .image {
 	position: fixed;
 	top: 440px;
-	right: 250px;
+	padding-right:350px;
 	opacity: 1;
 	display: block;
 	width: 200px;
 	height: 200px;
 	transition: .5s ease;
 	backface-visibility: hidden;
-	margin: 0px;
+	/* margin: 0px; */
 }
 
