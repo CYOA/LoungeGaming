@@ -49,7 +49,7 @@ public class WebController {
 		// time
 		model.addAttribute("narrator1", npcRepo.findOne((long) 1));
 
-		return "Intro";
+		return "intro";
 	}
 
 	@RequestMapping("/addHero")
@@ -76,7 +76,7 @@ public class WebController {
 	@RequestMapping("/destination")
 	public String chooseDestination(Model model) {
 		model.addAttribute("hero", heroRepo.findAll());
-		return "Destination";
+		return "destination";
 	}
 
 	/********************************
