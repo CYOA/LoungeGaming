@@ -47,6 +47,9 @@ display: flex;
     background: transparent;  /* optional: just make scrollbar invisible */
 }
 
+a.continueAnchor{
+	text-decoration: none;
+}
  
 button.continue  {
 	background-color: #D4AF6A;
@@ -56,6 +59,8 @@ button.continue  {
 	margin: auto;
 	margin-top: 30px;
 	color: black;
+	text-decoration: none;
+	
 }
 
 button.submit {
@@ -66,6 +71,7 @@ button.submit {
 button:hover {
 	background-color: #FFE1AA;
 }
+
 
 @keyframes runKnight {
 	0% {left: -7%; }
