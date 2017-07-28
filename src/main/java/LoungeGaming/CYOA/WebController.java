@@ -44,8 +44,7 @@ public class WebController {
 	@RequestMapping("/intro")
 	public String displayIntro(Model model) {
 		model.addAttribute("narrator0", npcRepo.findOne((long) 0));
-		// Narrator2 text should replace Narrator text after a short period of
-		// time
+		// Narrator2 text should replace Narrator text after a short period of time
 		model.addAttribute("narrator1", npcRepo.findOne((long) 1));
     
 		return "Intro";

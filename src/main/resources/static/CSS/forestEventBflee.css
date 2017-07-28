@@ -74,14 +74,14 @@ display: flex;
 } 
 
 @keyframes runKnight {
-	0% {left: 50%; }
+	0% {left: 30%; }
 	100% {left: 100%;}	
 }
 
 .knight {
 	position: fixed;
-	animation: 5s runKnight forwards 1s;
-	left: 50%;
+	animation: 4s runKnight forwards 0.5s;
+	left: 30%;
 }
 
 .image1 {
