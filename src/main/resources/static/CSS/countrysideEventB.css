@@ -68,7 +68,6 @@ text-decoration: none;
 
 img {
 	border-radius: 25px;
-	/* height: 50px; */
 }
 
 /* Some left and right padding inside the container */
@@ -167,6 +166,6 @@ a:link {
 
 #emblem {
 	height: 290px;
-	margin-left: 10px;
+	margin-left: 60px;
 	margin-top: 10px;
 }
