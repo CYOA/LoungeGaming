@@ -170,4 +170,9 @@ public class WebController {
         return "cityEventA";
     }
 	
+	@RequestMapping("/cityFight")
+    public String displayCityFight(Model model) {
+        return "cityFight";
+    }
+	
 }
