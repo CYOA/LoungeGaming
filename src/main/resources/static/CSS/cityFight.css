@@ -68,6 +68,11 @@ button:hover {
 
 @keyframes runKnight {
 	0% {left: 50%; }
+	100% {left: 110%;}	
+} 
+
+@keyframes runBlue {
+	0% {left: 415px; }
 	100% {left: 100%;}	
 }
 
@@ -88,7 +93,13 @@ button:hover {
     transition: .5s ease;
     backface-visibility: hidden;	
 	
-}  
+}
+
+.blue {
+	position: fixed;
+	animation: 5s runBlue forwards 1s;
+	left: 50%;
+}
 
 .blue {
     position: fixed;
@@ -127,7 +138,24 @@ button:hover {
     /* transition: .5s ease; */
     backface-visibility: hidden;	
 	
-}  
+}
+
+@keyframes fly {
+	0% {
+		top:75px; 
+		right: 75px;
+		width: 400px;
+	}
+	100% {
+		top: 90%;
+		right: 0%;
+	}	
+}
+
+.winged {
+	position: fixed;
+	animation: 5s fly forwards 1s;
+}
 
 .winged {
     position: fixed;
