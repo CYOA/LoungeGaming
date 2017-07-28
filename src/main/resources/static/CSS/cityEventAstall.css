@@ -126,12 +126,12 @@ button:hover {
 }
 .monster1 {
 	position: fixed;
-	top: 520px;
-	right: 30px;
+	top: 490px;
+	right: 10px;
 	opacity: 1;
 	display: block;
-	width: 150px;
-	height: 90px;
+	width: 200px;
+	height: 100px;
 	margin: 0px;
 }
 
@@ -148,7 +148,7 @@ button:hover {
 .monster3 {
 	position: fixed;
 	top: 500px;
-	right: 290px;
+	right: 300px;
 	opacity: 1;
 	display: block;
 	width: 150px;
@@ -168,7 +168,7 @@ button:hover {
 
 .monster5 {
 	position: fixed;
-	top:170px;
+	top: 90px;
 	right: 50px;
 	opacity: 1;
 	display: block;
