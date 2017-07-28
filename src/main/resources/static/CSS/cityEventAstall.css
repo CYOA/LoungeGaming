@@ -1,0 +1,121 @@
+body {
+	background: url(/images/city.jpg) no-repeat center center fixed;
+	background-size: cover;
+	background-position: 0px -200px;
+}
+
+/* .container a {
+	text-decoration: none;
+}
+ */
+button.continue  {
+	background-color: #D4AF6A;
+	border-radius: 8px;
+	font-size: 40px;
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	color: black;
+}
+
+button.submit {
+	font-size: 17px;
+	color: #553700;
+}
+
+button:hover {
+	background-color: #FFE1AA;
+}
+
+.dialogue_box {
+	min-width: 500px;
+	min-height: 200px;
+	max-height: 200px;
+	background: rgba(255, 230, 230, .85);
+	color: black;
+	display: flex;
+	font-family: 'VT323', monospace;
+	flex-wrap: wrap;
+	font-size: 16px;
+	flex-direction: row;
+	align-items: left;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+	padding-left: 30px;
+	box-shadow: 15px 15px 10px #282929;
+	border: 4px dashed #001f35;
+	border-radius: 25px;
+}
+
+.textbox {
+	display: flex;
+	align-self: flex-start;
+	max-width: 100%;
+	max-height: 200px;
+	margin: auto;
+	margin-left: 30px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-family: 'VT323', monospace;
+	font-size: 40px;
+	padding-right: 40px;
+}
+
+::-webkit-scrollbar {
+	width: 0px; /* remove scrollbar space */
+	background: transparent; /* optional: just make scrollbar invisible */
+}
+
+/* .hero {
+	width: none;
+} */
+.hero1 {
+	position: fixed;
+	top: 490px;
+	left: 130px;
+	opacity: 1;
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin: 0px;
+}
+
+
+.bandit {
+	position: fixed;
+	top: 480px;
+	left: 260px;
+	opacity: 1;
+	display: block;
+	width: 170px;
+	height: 160px;
+	margin: 0px;
+}
+.wizard {
+	position: fixed;
+	top: 470px;
+	left: 380px;
+	opacity: 1;
+	display: block;
+	width: 150px;
+	height: 170px;
+	margin: 0px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+img.fireimage {
+    animation: blink 3s;
+    animation-iteration-count: infinite;
+}
