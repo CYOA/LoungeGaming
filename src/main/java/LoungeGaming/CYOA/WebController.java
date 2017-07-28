@@ -49,7 +49,7 @@ public class WebController {
 		// time
 		model.addAttribute("narrator1", npcRepo.findOne((long) 1));
 
-		return "Intro";
+		return "intro";
 	}
 
 	@RequestMapping("/addHero")
@@ -76,7 +76,7 @@ public class WebController {
 	@RequestMapping("/destination")
 	public String chooseDestination(Model model) {
 		model.addAttribute("hero", heroRepo.findAll());
-		return "Destination";
+		return "destination";
 	}
 
 	/********************************
@@ -134,14 +134,14 @@ public class WebController {
 		return "countrysideEventA";
 	}
 
-		@RequestMapping("/countrysideEventAApproach")
+		@RequestMapping("/countrysideEventAapproach")
 		public String displayCountrysideEventAApproach(Model model) {
 			return "countrysideEventAApproach";
 		}
 	
-		@RequestMapping("/countrysideEventAHide")
+		@RequestMapping("/countrysideEventAhide")
 		public String displayCountrysideEventAHide(Model model) {
-			return "countrysideEventAHide";
+			return "countrysideEventAhide";
 		}
 
 	@RequestMapping("/countrysideEventB")
@@ -149,14 +149,14 @@ public class WebController {
 		return "countrysideEventB";
 	}
 	
-		@RequestMapping("/countrysideEventBFight")
+		@RequestMapping("/countrysideEventBfight")
 		public String displayCountrysideEventBFight(Model model) {
 			return "countrysideSetting";
 		}
 
-		@RequestMapping("/countrysideEventBTalk")
+		@RequestMapping("/countrysideEventBtalk")
 		public String displayCountrysideEventBTalk(Model model) {
-			return "countrysideEventBTalk";
+			return "countrysideEventBtalk";
 		}
 
 	

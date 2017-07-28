@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 body {
-    background: url(/images/ForestNight.jpg);
+    background: url("../images/ForestNight.jpg");
     background-size: cover; 
 }
 .dialogue_box {
