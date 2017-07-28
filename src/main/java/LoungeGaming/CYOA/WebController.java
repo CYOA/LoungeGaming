@@ -158,7 +158,18 @@ public class WebController {
 		public String displayCountrysideEventBTalk(Model model) {
 			return "countrysideEventBtalk";
 		}
-
+		
+		
+		/***********************
+		 * Mapping for City Event
+		 ************************/	
+		
+		@RequestMapping("/citySetting")
+		public String displayCityEntrance(Model model) {
+			return "citySetting";
+		}
+		
+				
 	
 }
 	
