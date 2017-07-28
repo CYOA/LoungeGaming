@@ -49,7 +49,7 @@ display: flex;
 
 /* .knight {
   position: fixed;
-  top: 350px;
+  top: 390px;
   right: 830px;
   opacity: 1;
   width: 150px;
@@ -62,7 +62,7 @@ display: flex;
 
 .image {
     position: fixed;
-    top: 390px;
+    top: 430px;
     left: 30px;
     opacity: 1;
     display: block;
@@ -81,11 +81,12 @@ display: flex;
 	position: fixed;
 	animation: 5s runKnight forwards 1s;
 	left: 50%;
+	
 }
 
 .image1 {
     position: fixed;
-    top: 364px;
+    top: 400px;
     padding-left: 100px;
     opacity: 1;
     display: block;
