@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/destination.css"></link>
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" />
+<title>Countryside: A Traveler Approaches</title>
+</head>
+<body>
+
+	<div class="menuContainer">
+		<div class="column">
+			<div class="card">
+				<img id="forest" src="/images/Countryside.jpg" alt="hide"
+					style="width: 100%"></img>
+				<div class="container">
+					<h2>Reason with the bandit</h2>
+					<a href="/countrysideEventBtalk"><button class="button">Persuade the bandit not to kill you.</button></a>
+					<br> </br>
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn">Village Elder Advice</button>
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<p>Considering the world is about to end, maybe the scoundrel will listen to reason.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menuContainer">
+		<div class="column">
+			<div class="card">
+				<img id="forest" src="/images/Countryside.jpg" alt="approach"
+					style="width: 100%"></img>
+				<div class="container">
+					<h2>Approach the traveler</h2>
+					<a href="/countrysideEventAapproach"><button class="button">Continue on your path</button></a>
+					<br> </br>
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn2">Village Elder Advice</button>
+
+					<!-- The Modal -->
+					<div id="myModal2" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<p>Friend, foe, or simply a fellow traveler? There is only one way to find out.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <audio src="Visager_-_18_-_Dark_Sanctum_Boss_Fight_Loop.mp3" autoplay loop></audio> -->
+	<script th:inline="javascript"></script>
+	<script src="/Javascript/modal.js"></script>
+</body>
+</html>
