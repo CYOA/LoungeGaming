@@ -108,22 +108,20 @@ public class WebController {
 		return "forestEventB";
 	}
 
-	
-		@RequestMapping("/forestEventBfight")
-		public String displayForestEventBfight(Model model) {
-			return "forestEventBfight";
-		}
-	
-		@RequestMapping("/forestEventBflee")
-		public String displayForestEventBflee(Model model) {
-			return "forestEventBflee";
-		}
-	
-	
-/***********************
- * Countryside Event
- ************************/
-	
+	@RequestMapping("/forestEventBfight")
+	public String displayForestEventBfight(Model model) {
+		return "forestEventBfight";
+	}
+
+	@RequestMapping("/forestEventBflee")
+	public String displayForestEventBflee(Model model) {
+		return "forestEventBflee";
+	}
+
+	/***********************
+	 * Countryside Event
+	 ************************/
+
 	@RequestMapping("/countrysideSetting")
 	public String displayCountrysideSetting(Model model) {
 		return "countrysideSetting";
@@ -134,32 +132,42 @@ public class WebController {
 		return "countrysideEventA";
 	}
 
-		@RequestMapping("/countrysideEventAapproach")
-		public String displayCountrysideEventAApproach(Model model) {
-			return "countrysideEventAApproach";
-		}
-	
-		@RequestMapping("/countrysideEventAhide")
-		public String displayCountrysideEventAHide(Model model) {
-			return "countrysideEventAhide";
-		}
+	@RequestMapping("/countrysideEventAapproach")
+	public String displayCountrysideEventAApproach(Model model) {
+		return "countrysideEventAApproach";
+	}
+
+	@RequestMapping("/countrysideEventAhide")
+	public String displayCountrysideEventAHide(Model model) {
+		return "countrysideEventAhide";
+	}
 
 	@RequestMapping("/countrysideEventB")
 	public String displayCountrysideEventB(Model model) {
 		return "countrysideEventB";
 	}
+
+	@RequestMapping("/countrysideEventBfight")
+	public String displayCountrysideEventBFight(Model model) {
+		return "countrysideSetting";
+	}
+
+	@RequestMapping("/countrysideEventBtalk")
+	public String displayCountrysideEventBTalk(Model model) {
+		return "countrysideEventBtalk";
+	}
+
+	/***********************
+	 * City Event
+	 ************************/
+	@RequestMapping("/cityDialogue")
+	public String displayCityDialogue(Model model) {
+		return "cityDialogue";
+	}
 	
-		@RequestMapping("/countrysideEventBfight")
-		public String displayCountrysideEventBFight(Model model) {
-			return "countrysideSetting";
-		}
-
-		@RequestMapping("/countrysideEventBtalk")
-		public String displayCountrysideEventBTalk(Model model) {
-			return "countrysideEventBtalk";
-		}
-
+	@RequestMapping("/cityEventA")
+    public String displayCityEventA(Model model) {
+        return "cityEventA";
+    }
 	
 }
-	
-	
