@@ -136,7 +136,7 @@ public class WebController {
 
 		@RequestMapping("/countrysideEventAapproach")
 		public String displayCountrysideEventAApproach(Model model) {
-			return "countrysideEventAApproach";
+			return "countrysideEventAapproach";
 		}
 	
 		@RequestMapping("/countrysideEventAhide")
