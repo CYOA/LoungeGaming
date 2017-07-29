@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>THE CASTLE</title>
+<link rel="stylesheet" type="text/css" href="CSS/castlePage.css"></link>
+<link href="https://fonts.googleapis.com/css?family=VT323"
+	rel="stylesheet"></link>
+</head>
+<body>
+
+	<div class="dialogue_box">
+		<div class="textbox">
+
+			<marquee LOOP="1" SCROLLAMOUNT="2" onmouseover="this.stop();"
+				onmouseout="this.start();" behavior="scroll" direction="up"
+				height=".textbox.height" width="dialogue_box.width" scrolldelay="0">
+
+				Welcome to my world ! Won't you come on in?Knock and the door will
+				open. Seek and you will find. Ask and you'll be given the key to this
+				castle if you defeat the Boss. <span class="wrap"></span>
+			</marquee>
+		</div>
+	</div>
+<div>
+		<img th:src="@{/images/Knight.svg}" class="knight" style="width: 100%"></img>
+	<img th:src="@{/images/Wizard.svg}" class="wizard" style="width: 100%"></img>
+		<img th:src="@{/images/bandit.png}" class="bandit" ></img>
+	</div>
+   
+</body>
+</html>

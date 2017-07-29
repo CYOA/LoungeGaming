@@ -114,20 +114,54 @@ button:hover {
 	
 }  
 
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.green {
+	position: fixed;
+	animation: 5s bounceIn forwards 1s;
+	left: 50%;
+}
  .green {
-    position: fixed;
-    top: 100px;
-    left: 0px;
+   position: fixed;
+    top: 200px;
+    right: 80px;
     opacity: 1;
     display: block;
     width: 150px;
     height: 150px; 
-   /*  transition: .5s ease; */
-    backface-visibility: hidden;	
-	 
+    transition: .5s ease;.knight {
+	position: fixed;
+	animation: 5s runKnight forwards 1s;
+	left: 50%;
+}
+   
+	  
 }   
 
-.fourarmed {
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}
+ .fourarmed {
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate 8;
+    
+} 
+
+/* .fourarmed {
     position: fixed;
     top: 475px;
     left: 175px;
@@ -135,10 +169,12 @@ button:hover {
     display: block;
     width: 150px;
     height: 150px; 
-    /* transition: .5s ease; */
-    backface-visibility: hidden;	
+    transition: .5s ease;
+    backface-visibility: hidden;	 
+    transform-origin: 50% 50%;
+  animation: jump .5s linear alternate 8;
 	
-}
+} */
 
 @keyframes fly {
 	0% {
@@ -154,7 +190,7 @@ button:hover {
 
 .winged {
 	position: fixed;
-	animation: 5s fly forwards 1s;
+	animation: 5s fly 1s;
 }
 
 .winged {

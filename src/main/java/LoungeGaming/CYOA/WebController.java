@@ -168,11 +168,15 @@ public class WebController {
 	@RequestMapping("/cityEventA")
     public String displayCityEventA(Model model) {
         return "cityEventA";
-    }
+    } 
 	
 	@RequestMapping("/cityFight")
     public String displayCityFight(Model model) {
         return "cityFight";
     }
 	
+	@RequestMapping("/castlePage")
+    public String displayCastlePage(Model model) {
+        return "castlePage";
+    }
 }
