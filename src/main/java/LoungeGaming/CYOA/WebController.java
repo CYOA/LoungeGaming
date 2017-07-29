@@ -134,10 +134,10 @@ public class WebController {
 		return "countrysideEventA";
 	}
 
-		@RequestMapping("/countrysideEventAapproach")
-		public String displayCountrysideEventAApproach(Model model) {
-			return "countrysideEventAapproach";
-		}
+//		@RequestMapping("/countrysideEventAapproach")
+//		public String displayCountrysideEventAApproach(Model model) {
+//			return "countrysideEventAapproach";
+//		}
 	
 		@RequestMapping("/countrysideEventAhide")
 		public String displayCountrysideEventAHide(Model model) {
@@ -151,7 +151,7 @@ public class WebController {
 	
 		@RequestMapping("/countrysideEventBfight")
 		public String displayCountrysideEventBFight(Model model) {
-			return "countrysideSetting";
+			return "countrysideEventBfight";
 		}
 
 		@RequestMapping("/countrysideEventBtalk")
