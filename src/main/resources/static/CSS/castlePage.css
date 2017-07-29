@@ -79,12 +79,12 @@ display: flex;
 }
 .bandit {
 	position: fixed;
-	top: 400px;
-	right: 350px;
+	top: 429px;
+	left: 625px;
 	/* opacity: 1;
 	display: block; */
-	width: 230px;
-	height: 230px;
+	width: 265px;
+	height: 215px;
 	/* transition: .5s ease;
 	backface-visibility: hidden; */
 }
