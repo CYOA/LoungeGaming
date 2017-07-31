@@ -87,3 +87,9 @@ button:hover {
 	margin-left: 400px;
 	margin-top: 110px;
 }
+
+#knight {
+	margin-top: -50px;
+	margin-left: 800px;
+	transform: scaleX(-1);
+}
