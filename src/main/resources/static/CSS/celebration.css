@@ -117,19 +117,19 @@ img.bard{
     border-radius: 50%;
 } */
 
-img.animate{
+img.leftwarrior{
 	position: fixed;
 	top: 490px;
 	/* padding- */right:190px;
 	opacity: 1;
 	display: block;
-	width: 145px;
+	width: 130px;
 	height: 150px;
 	transition: .5s ease;
 	backface-visibility: hidden;
 }
 
-.animate {
+.leftwarrior {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -182,31 +182,6 @@ img.orc{
 .orc {
 	display: inline-block;
 }
-/* .orc {
-  -webkit-animation-duration: 1.1s;
-  animation-duration: 1.1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-} 
-
-@-webkit-keyframes bounce {
-  0%,  20%, 40%, 60%, 80%, 100% {-webkit-transform: translateY(0);}
-  50% {-webkit-transform: translateY(-5px);}
-} 
-
-@keyframes bounce { 
-  0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
-  50% {transform: translateY(-5px);}
-} 
-
-.bounce { 
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-} */
 
 img.mage{
 	position: fixed;
@@ -320,191 +295,7 @@ img.knight{
 	backface-visibility: hidden;
 }
 
-/* .confetti
-{
-width: 10px;
-height: 10px;
-margin-top: -100px;
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
-border-radius: 5px;
-position:relative;
-animation:confetti 6s;
--webkit-animation:confetti 6s;
-animation-iteration-count: infinite;
--moz-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
--o-animation-iteration-count: infinite; Safari and Chrome
-}
-@keyframes confetti
-{
-0% {top:0px;}
-100% {top:1500px;}
-}
-@-webkit-keyframes confetti Safari and Chrome
-{
-0% {top:0px;}
-100% {top:1500px;}
-}
-.confetti1, .confetti2, .confetti3, .confetti4 {
-background-color: #a4b1a5;
-}
-.confetti1, .confetti12, .confetti22, .confetti27{
-animation-delay:1s;
--webkit-animation-delay:1s;
-}
-.confetti1 {
-margin-left: 50px;
-}
-.confetti2 {
-margin-left: 300px;
-}
-.confetti3, .confetti6, .confetti20, .confetti30{
-animation-delay:1.5s;
--webkit-animation-delay:1.5s;
-}
-.confetti3 {
-margin-left: 800px;
-}
-.confetti4, .confetti31{
-margin-left: 600px;
-animation-delay:3s;
--webkit-animation-delay:3s;
-}
-.confetti5, .confetti6, .confetti7 {
-background-color: #fbfcfa;
-}
-.confetti5 {
-margin-left: 700px;
-}
-.confetti6 {
-margin-left: 200px;
-}
-.confetti7, .confetti8, .confetti23,  .confetti28{
-animation-delay:4.5s;
--webkit-animation-delay:4.5s;
-}
-.confetti17 {
-margin-left: 100px;
-}
-.confetti8, .confetti9, .confetti10, .confetti11 {
-background-color: #5e625c;
-}
-.confetti8 {
-margin-left: 200px;
-}
-.confetti9 {
-margin-left: 900px;
-}
-.confetti10, .confetti14, .confetti18, .confetti24, .confetti29{
-animation-delay:2.5s;
--webkit-animation-delay:2.5s;
-}
-.confetti10 {
-margin-left: 550px;
-}
-.confetti11 {
-margin-left: 350;
-animation-delay:2s;
--webkit-animation-delay:2s;
-}
-.confetti12, .confetti13, .confetti14 {
-background-color: #f5d44d;
-}
-.confetti12 {
-margin-left: 350;
-}
-.confetti13, .confetti32{
-margin-left: 620;
-animation-delay:4s;
--webkit-animation-delay:4s;
-}
-.confetti14 {
-margin-left: 570;
-}
-.confetti15, .confetti16, .confetti17, .confetti18, .confetti33{
-background-color: #e44301;
-}
-.confetti15 {
-margin-left: 650px;
-}
-.confetti16, .confetti33{
-margin-left: 100px;
-animation-delay:4s;
--webkit-animation-delay:4s;
-}
-.confetti17, .confetti21, .confetti26{
-animation-delay:.5s;
--webkit-animation-delay:.5s;
-}
-.confetti17 {
-margin-left: 250px;
-}
-.confetti18 {
-margin-left: 450px;
-}
-.confetti19, .confetti20, .confetti21, .confetti32{
-background-color: #a9954d;
-}
-.confetti19 {
-margin-left: 450px;
-}
-.confetti20 {
-margin-left: 6200px;
-}
-.confetti21 {
-margin-left: 570px;
-}
-.confetti27, .confetti28, .confetti29 {
-background-color: #a9954d;
-}
-.confetti27 {
-margin-right: 50px;
-}
-.confetti28 {
-margin-right: 100px;
-}
-.confetti29 {
-margin-right: 75px;
-}
 
-.confetti22, .confetti23, .confetti24 {
-background-color: #a4b1a5;
-}
-.confetti22 {
-margin-right: 450px;
-}
-.confetti23 {
-margin-right: 250px;
-}
-.confetti24 {
-margin-right: 200px;
-}
-
-.confetti25, .confetti26, .confetti30 {
-background-color: #f5d44d;
-}
-.confetti22 {
-margin-right: 450px;
-}
-.confetti23 {
-margin-right: 350px;
-}
-.confetti24 {
-margin-right: 200px;
-}
-
-.confetti32 {
-margin-right: 200px;
-}
-
-.confetti31 {
-margin-right: 100px;
-}
-
-.confetti33 {
-margin-right: 150px;
-} */
 
 
 
