@@ -1,5 +1,5 @@
 body {
-    background: url(/images/throneroom.jpg);
+    background: url(/images/bossdiebackground.png);
     background-size: cover; 
 }
 .dialogue_box {
@@ -44,31 +44,20 @@ body {
 }
 
 .boss {
-	margin-left: 34%;
-	margin-top:-200px;
+	margin-left: 42%;
+	margin-top:-170px;
 	position: fixed;
-  width: 365px;
-  height: 333px;
-  background: url('/images/boss.png') left center;
-  animation: play 1.5s steps(8) infinite;
+  width: 218px;
+  height: 295px;
+  background: url('/images/bossdie.png') left center;
+  animation: play 1.5s steps(4) infinite;
  z-index: 5;
   
 }
 
-.demon {
-	margin-left: 15%;
-	margin-top:-70px;
-	position: fixed;
-  width: 242px;
-  height: 133px;
-  background: url('/images/monster1.png') left center;
-  filter: alpha(opacity=0);  
-	-webkit-animation: 24s ease 0s normal forwards .66 fadein;
-    animation: 24s ease 0s normal forwards .66 fadein;
- z-index: 6;
 
-}
-
+ 
+ 
 button {
 	background-color: #D4AF6A;
 
@@ -94,13 +83,22 @@ button:hover {
 	margin-left: 10%;
 	height: 400px;
 	margin-top: -200px;
-	-webkit-animation:spin 2s linear infinite;
-}
 
-@-webkit-keyframes spin { 
-    100% { 
-        transform: rotate(360deg);
-    } 
+ -webkit-animation-duration: 5s;animation-duration: 5s;
+ -webkit-animation-fill-mode: both;animation-fill-mode: both;
+  -webkit-animation-name: fadeOut;
+            animation-name: fadeOut;
+         }
+         
+ 
+         
+         @keyframes fadeOut {
+            0% {opacity: 1;}
+            100% {opacity: 0;}
+         }
+         
+   
+
 }
 /*.knight {
     position: fixed;
@@ -119,26 +117,7 @@ button:hover {
 
 * { color:black; text-decoration: none;}
 @keyframes play {
-   100% { background-position: -2923px; }
+   100% { background-position: -870px; }
 }
 
-@keyframes fadein{
-    0% { opacity:0; }
-    10% { opacity:.1; }
-    20% { opacity:.2; }
-    30% { opacity:.3; }
-    40% { opacity:.4; }
-    50% { opacity:.5; }
-    60% { opacity:.6; }
-    
-}
-
-@-webkit-keyframes fadein{
-    0% { opacity:0; }
-    10% { opacity:.1; }
-    20% { opacity:.2; }
-    30% { opacity:.3; }
-    40% { opacity:.4; }
-    50% { opacity:.5; }
-    60% { opacity:.6; }
-}
+ 
