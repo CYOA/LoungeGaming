@@ -169,7 +169,10 @@ public class WebController {
 			return "citySetting";
 		}
 		
-				
+		@RequestMapping("/celebration")
+		public String displayCelebration(Model model) {
+			return "celebration";
+		}
 	
 }
 	
