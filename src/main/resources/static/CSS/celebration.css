@@ -80,42 +80,7 @@ img.bard{
 .bard {
 	display: inline-block;
 }
-/*
-.animated {
-  -webkit-animation-duration: 1.2s;
-  animation-duration: 1.2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-} 
- */
-@-webkit-keyframes bounce {
-  0%,  20%, 40%, 60%, 80%, 100% {-webkit-transform: translateY(0);}
-  50% {-webkit-transform: translateY(-5px);}
-} 
 
-@keyframes bounce { 
-  0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
-  50% {transform: translateY(-5px);}
-} 
-
-.bounce { 
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-}
-
-/* #animated-example {
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    position: relative;
-    top: 100px;
-    left: 100px;
-    border-radius: 50%;
-} */
 
 img.leftwarrior{
 	position: fixed;
@@ -129,30 +94,20 @@ img.leftwarrior{
 	backface-visibility: hidden;
 }
 
+@keyframes poop-dance {
+  from, 49% { transform-origin: -50% 100%; }
+  50%, 75%, to { transform-origin: 150% 100%; }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(10deg); }
+}
+
 .leftwarrior {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-} 
+	animation: poop-dance .93s infinite alternate ease-in-out;
+}
 
-@-webkit-keyframes bounces {
-  0%,  20%, 40%, 60%, 80%, 100% {-webkit-transform: translateY(0);}
-  50% {-webkit-transform: translateY(-5px);}
-} 
-
-@keyframes bounces { 
-  0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
-  50% {transform: translateY(-5px);}
-} 
-
-.bounces { 
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
+.leftwarrior {
+	display: inline-block;
 }
 
 
@@ -176,7 +131,7 @@ img.orc{
 }
 
 .orc {
-	animation: poop-dance .9s infinite alternate ease-in-out;
+	animation: poop-dance .92s infinite alternate ease-in-out;
 }
 
 .orc {
@@ -195,30 +150,20 @@ img.mage{
 	backface-visibility: hidden;
 }
 
+@keyframes poop-dance {
+  from, 49% { transform-origin: -50% 100%; }
+  50%, 75%, to { transform-origin: 150% 100%; }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(10deg); }
+}
+
 .mage {
-  -webkit-animation-duration: 1.1s;
-  animation-duration: 1.1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-} 
+	animation: poop-dance .9s infinite alternate ease-in-out;
+}
 
-@-webkit-keyframes bounce {
-  0%,  20%, 40%, 60%, 80%, 100% {-webkit-transform: translateY(0);}
-  50% {-webkit-transform: translateY(-5px);}
-} 
-
-@keyframes bounce { 
-  0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
-  50% {transform: translateY(-5px);}
-} 
-
-.bounce { 
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
+.mage {
+	display: inline-block;
 }
 
 img.archer{
@@ -233,30 +178,20 @@ img.archer{
 	backface-visibility: hidden;
 }
 
+@keyframes poop-dance {
+  from, 49% { transform-origin: -50% 100%; }
+  50%, 75%, to { transform-origin: 150% 100%; }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(10deg); }
+}
+
 .archer {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-} 
+	animation: poop-dance .96s infinite alternate ease-in-out;
+}
 
-@-webkit-keyframes bounce {
-  0%,  20%, 40%, 60%, 80%, 100% {-webkit-transform: translateY(0);}
-  50% {-webkit-transform: translateY(-5px);}
-} 
-
-@keyframes bounce { 
-  0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
-  50% {transform: translateY(-5px);}
-} 
-
-.bounce { 
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
+.archer {
+	display: inline-block;
 }
 
 img.bandit{
