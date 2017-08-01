@@ -60,12 +60,23 @@ button:hover {
 	background-color: #FFE1AA
 }
 
+.container {
+	align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-left: 00px;
+
+
+}
+
 #bandit {
-	
+	margin-top: 110px;
+	margin-left: 500px;
 }
 
 #knight {
 	transform: scaleX(-1);
 	margin-left: 800px;
-	margin-top: 150px;
+	margin-top: 10px;
 }
