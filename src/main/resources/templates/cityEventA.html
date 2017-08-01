@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/CSS/cityEventA.css"></link>
+<link href="https://fonts.googleapis.com/css?family=VT323"
+	rel="stylesheet">
+</link>
+<title>City Event A</title>
+</head>
+<body>
+
+	<div class="menuContainer">
+		<div class="column">
+			<div class="card">
+				<img id="city" src="/images/fightMonster.jpg" alt="city" style="width: 100%"></img>
+				<div class="container">
+					<h2>Fight</h2>
+					<button class="button">
+						<a href="/#">Fight the monsters head on</a>
+					</button><br> </br>
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn">Elder Secret</button>
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<p>There is a small chance you will come out victorious on
+								your own. Waiting for help will give you an advantage with the
+								evil dark lord...</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menuContainer">
+		<div class="column">
+			<div class="card">
+				<img id="city" src="/images/stallMonster.jpg" alt="city"
+					style="width: 100%"></img>
+				<div class="container">
+					<h2>Stall</h2>
+					<button class="button">
+						<a href="/cityEventAstall">Stall and wait for help</a>
+					</button>
+					<br> </br>
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn2">Elder Secret</button>
+
+					<!-- The Modal -->
+					<div id="myModal2" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<p>This is the safest bet to ensure your life. You are more
+								powerful in numbers and have a greater chance of defeating the
+								enemy...</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <audio src="Visager_-_18_-_Dark_Sanctum_Boss_Fight_Loop.mp3" autoplay loop></audio> -->
+	<script th:inline="javascript"></script>
+	<script src="/Javascript/modal.js"></script>
+</body>
+</html>

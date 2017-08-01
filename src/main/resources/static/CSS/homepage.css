@@ -1,7 +1,7 @@
 body { 
-  background: url(/images/CastleHomePage.svg) no-repeat center center fixed; 
-  background-size: stretch;
-  background-position: 200 -200px;
+  background: url(/images/CastleHomePage.jpg) no-repeat center center; 
+	background-size: 100%;
+  background-position: 0px 4px;
 }
 
 .container {
@@ -12,13 +12,47 @@ body {
 }
 
 button {
-	background-color: #ff8c1a;
-	border-radius: 12px;
+	background-color: #D4AF6A;
+	border-radius: 25px;
+	color: #553700;
+	font-size: 16px;
+	font-weight: bold;
+}
+.x {
+font-size: 25px;
+	font-weight: bold;
+	color: #553700;
+}
+a:visited {
+	color: #553700;
+	font-weight: bold;
+	color: #553700;
+}
+
+a:link {
+	color: #553700;
+	font-weight: bold;
 }
 
 button:hover {
-	background-color: #f2f4f3;
+	background-color: #FFE1AA;
 }
 
+.flag1 {
+    position: fixed;
+    top: 156px;
+    right: 578px;
+    opacity: 1;
+    width: 78px;
+    height: 83px;
+    z-index: -1;
+      background: url('/images/flaganimation.png') left center;
+      animation:  play 0.7s steps(6) infinite;
+      animation-fill-mode: forwards;
+      
+    
+}
 
-
+@keyframes play {
+  100% { background-position: -1622px; }
+ }

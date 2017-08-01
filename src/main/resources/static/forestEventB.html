@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/CSS/ForestEventB.css"></link>
+<link href="https://fonts.googleapis.com/css?family=VT323"
+	rel="stylesheet">
+</link>
+<title>Forest Event A</title>
+</head>
+<body>
+
+	<div class="menuContainer">
+		<div class="column">
+			<div class="card">
+				<img id="forest" src="/images/FightWolf.jpg" alt="fightwolf"
+					style="width: 100%"></img>
+				<div class="container">
+					<h2>Fight</h2>
+					<a href="/WolfAttack.html"><button class="button">
+						Stay and fight the wolf!
+					</button></a>
+					<br> </br>
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn">Elder Secret</button>
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<p>Choosing this option will have cities ringing your praise.
+								But there is also a chance you won't make it through the
+								fight...</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menuContainer">
+		<div class="column">
+			<div class="card">
+				<img id="forest" src="/images/FleeWolf.jpg" alt="fleewolf"
+					style="width: 100%"></img>
+				<div class="container">
+					<h2>Flee</h2>
+					<button class="button">
+						<a href="/forestEventBflee.html">Run away from the fight</a>
+					</button>
+					<br> </br>
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn2">Elder Secret</button>
+
+					<!-- The Modal -->
+					<div id="myModal2" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<p>This is the safest bet to ensure your life. But keep in
+								might the forest is hard to navigate through at night...</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <audio src="Visager_-_18_-_Dark_Sanctum_Boss_Fight_Loop.mp3" autoplay loop></audio> -->
+	<script th:inline="javascript"></script>
+	<script src="/Javascript/modal.js"></script>
+</body>
+</html>
