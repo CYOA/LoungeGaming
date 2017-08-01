@@ -14,7 +14,11 @@ button.continue  {
 	font-size: 40px;
 	display: block;
 	margin: auto;
+<<<<<<< HEAD
+	margin-top: 200px;
+=======
 	margin-top: 30px;
+>>>>>>> master
 	color: black;
 }
 
@@ -73,12 +77,21 @@ button:hover {
 } */
 .image {
 	position: fixed;
+<<<<<<< HEAD
+	top: 340px;
+	left: 110px;
+	opacity: 1;
+	display: block;
+	width: 200px;
+	height: 200px;
+=======
 	top: 375px;
 	left: 230px;
 	opacity: 1;
 	display: block;
 	width: 150px;
 	height: 150px;
+>>>>>>> master
 	transition: .5s ease;
 	backface-visibility: hidden;
 	margin: 0px;
@@ -86,12 +99,20 @@ button:hover {
 
 .fireimage {
 	position: fixed;
+<<<<<<< HEAD
+	top: 443px;
+=======
 	top: 413px;
+>>>>>>> master
 	right: 170px;
 	opacity: 1;
 	display: block;
 	width: 170px;
+<<<<<<< HEAD
+	height: 105px;
+=======
 	height: 130px;
+>>>>>>> master
 	transition: .5s ease;
 	backface-visibility: hidden;
 	margin: 0px;
