@@ -29,6 +29,9 @@ html, body {
   margin-bottom: 50px;
   font-size: 50px;
 }
+.movie img {
+margin-left: -30px;
+}
 
 .job {
   margin-bottom: 5px;
