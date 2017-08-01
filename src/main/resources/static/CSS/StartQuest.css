@@ -1,6 +1,7 @@
 body { 
   background: url(/images/CharacterStartGame1.jpg) no-repeat center center fixed; 
   background-size:100%;
+  background-size: cover;
   background-position: 200 -200px;
   
 }

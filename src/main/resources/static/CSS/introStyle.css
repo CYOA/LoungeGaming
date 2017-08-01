@@ -1,7 +1,10 @@
 body {
-	background: url(/images/IntroStoryPageWithoutPeople.svg) no-repeat center center fixed; 
-	background-size: stretch;
-	background-position: 200 -200px; 
+	background: url(/images/IntroStoryPageWithoutPeople.jpg) no-repeat center
+		center fixed;
+	background-size: cover;
+	min-height: 100%;
+	min-width: 1024px;
+	background-position: 50 -50px;
 }
 
 button {
