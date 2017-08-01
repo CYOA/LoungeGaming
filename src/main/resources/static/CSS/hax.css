@@ -1,0 +1,62 @@
+body {
+background-color: black;
+color: white;
+font-size: 2em;
+
+		margin: 0;
+	font-family: 'VT323', monospace;
+}
+.var-highlight{
+	color: #C0AD60;
+}
+.string-highlight{
+	color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter{
+		margin: 0;
+	font-family: 'VT323', monospace;
+
+		&:after{
+			content: "|";
+			animation: blink 500ms linear infinite alternate;
+		}
+}
+
+
+button {
+	background-color: #D4AF6A;
+
+}
+button.continue{
+	border-radius:8px;
+	font-size: 40px;
+	color: #553700;
+}
+
+button:hover {
+	background-color: #FFE1AA;
+}
+.container {
+	position: fixed;
+	align-items: flex-end;
+	display: flex;
+	justify-content: right;
+	margin-top: 30px;
+	margin-left: 80%;
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}

@@ -3,9 +3,9 @@ body {
     background-size: cover; 
 }
 .dialogue_box {
-    min-width: 100px;
+    min-width: 600px;
     min-height: 200px;
-    max-width: 380px;
+    max-width: 600px;
     background: rgba(255,230,230,.85);
     color: black;
     display: flex;
@@ -16,8 +16,8 @@ body {
     align-items: left;
     justify-content: space-between;
     margin-top: 50px;
-    margin-left: 800px;
-    margin-right: 0	px;
+    margin-left: 500px;
+    margin-right: 5	px;
     padding-left: 30px;
     box-shadow: 15px 15px 10px #282929;
     border: 4px dashed #001f35;
@@ -27,27 +27,29 @@ body {
 .textbox, #typewriter {
 	display: flex;
 	align-self: flex-start;
-	max-width: 100%;
+	max-width: 70%;
     max-height: 200px;
     margin: auto;
     margin-left: 30px;
 
 }
 
-.portrait img {
+.portrait   {
+max-width: 30%;
 	display:flex;
-	max-width: 200px;
-    max-height: 200px;
+	max-width: 166px;
+    max-height: 161px;
     color: white;
     align-self: left;
-    margin-top: 10px;
+    margin-top:30px;
+    margin-left: -20px;
 }
 
 .boss {
-	margin-left: 42%;
-	margin-top:-170px;
+	margin-left: 44%;
+	margin-top:-100px;
 	position: fixed;
-  width: 218px;
+width: 218px;
   height: 295px;
   background: url('/images/bossdie.png') left center;
   animation: play 1.5s steps(4) infinite;
@@ -55,6 +57,39 @@ body {
   
 }
 
+
+.knight {
+		margin-left: 80%;
+	margin-top:30px;
+	position: fixed;
+  width: 144px;
+  height: 135px;
+		background: url('/images/knight-left.png') left center;
+	
+}
+.wizard  {
+position: fixed;
+    top: 362px;
+    right: -15px;
+    opacity: 1;
+    display: block;
+    backface-visibility: hidden;
+    z-index: 1;
+	
+}
+
+.wizard img {
+ width: 130px;
+    height: 150px;
+}
+
+ .bandit img {
+	margin-left: 70%;
+	margin-top:30px;
+	position: fixed;
+  width: 144px;
+  height: 135px;
+ }
 
  
  
@@ -99,6 +134,10 @@ button:hover {
          
    
 
+@-webkit-keyframes spin { 
+    100% { 
+        transform: rotate(360deg);
+    } 
 }
 /*.knight {
     position: fixed;
