@@ -87,6 +87,11 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	margin-top: 160px;
-	margin-left: 50px;
+	margin-left: 300px;
 	
+}
+
+#wizard {
+	transform: scaleX(-1);
+	margin-top: -40px;;
 }
