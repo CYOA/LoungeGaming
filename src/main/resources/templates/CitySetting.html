@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>City Entrance</title>
-    <link rel="stylesheet" type="text/css" href="CSS/citySetting.css"></link>
- <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"></link> 
+<title>City Entrance</title>
+<link rel="stylesheet" type="text/css" href="CSS/citySetting.css"></link>
+<link href="https://fonts.googleapis.com/css?family=VT323"
+	rel="stylesheet"></link>
 </head>
 <body>
 
-<div class="dialogue_box">                                          
-   		<div class="textbox">                
+	<div class="dialogue_box">
+		<div class="textbox">
 
-   			 <marquee LOOP="1" SCROLLAMOUNT="4" onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" direction="up" height=".textbox.height" width="dialogue_box.width" scrolldelay="0">
+			<marquee LOOP="1" SCROLLAMOUNT="4" onmouseover="this.stop();"
+				onmouseout="this.start();" behavior="scroll" direction="up"
+				height=".textbox.height" width="dialogue_box.width" scrolldelay="0">
 
-   			 As the brave knight enters the city a feeling of doom overtakes him. His courage does not waver, he but he knows not what awaits him. He is prepared to do what he must so that evil does not win. 
-   			 <span class="wrap"></span>
- 			 </marquee>
- 			  			
-	  
-   	 </div>
-   
-</div>
-<div class="knight">
-        <img th:src="@{/images/Knight.svg}" class="image" style="width: 88%"></img>
-    </div> 
+				As the brave knight enters the city a feeling of doom overtakes him.
+				His courage does not waver, he but he knows not what awaits him. He
+				is prepared to do what he must so that evil does not win. <span
+					class="wrap"></span>
+			</marquee>
 
-<div class ="continueButton">
-<a class="continueAnchor" href="/cityDialgue"><button class = "continue">Continue</button></a>
-</div>
+
+		</div>
+
+	</div>
+	<div class="knight">
+		<img th:src="@{/images/Knight.svg}" class="image" style="width: 88%"></img>
+	</div>
+
+	<div class="continueButton">
+		<a class="continueAnchor" href="/cityDialogue"><button
+				class="continue">Continue</button></a>
+	</div>
 </body>
 </html>

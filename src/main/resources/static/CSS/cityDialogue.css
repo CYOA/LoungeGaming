@@ -47,24 +47,31 @@ display: flex;
     background: transparent;  /* optional: just make scrollbar invisible */
 }
 
-button.continue {
+button {
 	background-color: #D4AF6A;
-	border-radius: 8px;
-	font-size: 40px;
-	display: block;
-	margin: auto;
-	margin-top: 30px;
-	color: black;
 }
 
-button.submit {
-	font-size: 17px;
+button.continue {
+	border-radius: 8px;
+	font-size: 40px;
 	color: #553700;
 }
 
 button:hover {
 	background-color: #FFE1AA;
-} 
+}
+
+.container {
+	align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	margin: 30px auto;
+	
+}
+
+a {
+	text-decoration: none;
+}
 
 /* @keyframes runKnight {
 	0% {left: 50%; }

@@ -147,10 +147,11 @@ public class WebController {
 		return "countrysideEventB";
 	}
 
-	@RequestMapping("/countrysideEventBfight")
-	public String displayCountrysideEventBFight(Model model) {
-		return "countrysideSetting";
-	}
+	/*
+	 * @RequestMapping("/countrysideEventBfight") public String
+	 * displayCountrysideEventBFight(Model model) { return "countrysideSetting";
+	 * }
+	 */
 
 	@RequestMapping("/countrysideEventBtalk")
 	public String displayCountrysideEventBTalk(Model model) {
@@ -167,4 +168,28 @@ public class WebController {
 		return "cityEventAstall";
 	}
 
+	@RequestMapping("/CitySetting")
+	public String displayCity(Model model) {
+		return "CitySetting";
+	}
+
+	@RequestMapping("/cityDialogue")
+	public String displayCityDialouge(Model model) {
+		return "cityDialogue";
+	}
+
+	@RequestMapping("/cityFight")
+	public String displayCityFight(Model model) {
+		return "cityFight";
+	}
+
+	@RequestMapping("/castlePage")
+	public String displayCastle(Model model) {
+		return "castlePage";
+	}
+
+	@RequestMapping("/celebration")
+	public String displayCelebration(Model model) {
+		return "celebration";
+	}
 }

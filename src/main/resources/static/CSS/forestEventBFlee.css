@@ -47,38 +47,70 @@ display: flex;
     background: transparent;  /* optional: just make scrollbar invisible */
 }
 
+/* .knight {
+  position: fixed;
+  top: 350px;
+  right: 830px;
+  opacity: 1;
+  width: 150px;
+  height: 150px;
+  z-index: -1;
+    background: url('/images/knightdead.png') left center;
+    animation:  play 0.8s steps(6) infinite;
+    animation-fill-mode: forwards;
+} */
+
 .image {
     position: fixed;
-    top: 300px;
+    top: 460px;
     left: 30px;
     opacity: 1;
     display: block;
-    width: 250px;
-    height: 250px; 
+  	
     transition: .5s ease;
     backface-visibility: hidden;	
 	
 } 
+
+@keyframes runKnight {
+	0% {left: 50%; }
+	100% {left: 100%;}	
+}
+
+.knight {
+	position: fixed;
+	animation: 5s runKnight forwards 1s;
+	left: 50%;
+}
 
 .image1 {
     position: fixed;
-    top: 265px;
-    right: 200px;
+    top: 425px;
+    padding-left: 100px;
     opacity: 1;
     display: block;
-    width: 200px;
-    height: 300px; 
+    width: 150px;
+    height: 150px; 
     transition: .5s ease;
     backface-visibility: hidden;	
 	
-} 
+}  
 
 button.continue {
-	background-color: #E8CADB;
+	background-color: #D4AF6A;
 	border-radius: 8px;
 	font-size: 40px;
 	display: block;
 	margin: auto;
-	margin-top: 200px;
+	margin-top: 30px;
 	color: black;
+}
+
+button.submit {
+	font-size: 17px;
+	color: #553700;
+}
+
+button:hover {
+	background-color: #FFE1AA;
 }

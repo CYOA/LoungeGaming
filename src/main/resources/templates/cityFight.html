@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>THE CITY</title>
-    <link rel="stylesheet" type="text/css" href="CSS/cityFight.css"></link>
- <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"></link> 
+<title>THE CITY</title>
+<link rel="stylesheet" type="text/css" href="CSS/cityFight.css"></link>
+<link href="https://fonts.googleapis.com/css?family=VT323"
+	rel="stylesheet"></link>
 </head>
 <body>
 
-<div class="dialogue_box">                                          
-   		<div class="textbox">                
+	<div class="dialogue_box">
+		<div class="textbox">
 
-   			 <marquee LOOP="1" SCROLLAMOUNT="3" onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" direction="up" height=".textbox.height" width="dialogue_box.width" scrolldelay="0">
+			<marquee LOOP="1" SCROLLAMOUNT="3" onmouseover="this.stop();"
+				onmouseout="this.start();" behavior="scroll" direction="up"
+				height=".textbox.height" width="dialogue_box.width" scrolldelay="0">
 
-As the monsters approach, they yell "Hehehe. We're not done!! We will jump, chase and attack you in anyway we can !". 
-   			 <span class="wrap"></span>
- 			 </marquee></div>
- 			 
-  <button class = "continue">Continue</button>	  
-  
-  <div class = "blue">
-  
-  <img th:src= "@{/images/monster1.png}" class="blue"></img>
- 
- </div>
- 
-  <div class= "green">
-  <img th:src="@{/images/monster2.png}" class="green"></img>
- 
- </div>
- 
-  <div class = "fourarmed">
-  <img th:src="@{/images/monster3.png}" class="fourarmed"></img>
- 
- </div>
- 
- <div class= "winged">
- 
-  <img th:src="@{/images/monster5.png}" class="winged"></img>
- 
- </div>
- 
- <div class= "knight">
- 
-  <img th:src="@{/images/Knight.png}" class="knight"></img>
-  
- </div>
-   	
-   <div></div>	
-   
-</div>
+				As the monsters approach, they yell "Hehehe. We're not done!! We
+				will jump, chase and attack you in anyway we can !". <span
+					class="wrap"></span>
+			</marquee>
+		</div>
+
+		<div class="container">
+			<a href="/gameOver.html"><button class="continue">Continue</button></a>
+		</div>
+
+		<div class="blue">
+
+			<img th:src="@{/images/monster1.png}" class="blue"></img>
+
+		</div>
+
+		<div class="green">
+			<img th:src="@{/images/monster2.png}" class="green"></img>
+
+		</div>
+
+		<div class="fourarmed">
+			<img th:src="@{/images/monster3.png}" class="fourarmed"></img>
+
+		</div>
+
+		<div class="winged">
+
+			<img th:src="@{/images/monster5.png}" class="winged"></img>
+
+		</div>
+
+		<div class="knight">
+
+			<img th:src="@{/images/Knight.png}" class="knight"></img>
+
+		</div>
+
+		<div></div>
+
+	</div>
 </body>
 </html>

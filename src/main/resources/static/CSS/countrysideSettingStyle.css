@@ -1,7 +1,8 @@
 body {
 	background-image: url("../images/Countryside.jpg");
 	background-repeat: no-repeat;
-	background-size: 1300px 750px;
+	background-size: cover;
+	background-size: 1300px 750px; 
 }
 
 .dialogue_box {
@@ -50,8 +51,30 @@ display: flex;
 	margin-left: 465px;
 	
 }
-
 button {
+	background-color: #D4AF6A;
+
+}
+button.continue{
+	border-radius:8px;
+	font-size: 40px;
+	color: #553700;
+}
+
+button:hover {
+	background-color: #FFE1AA;
+}
+
+.container {
+	align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-left: 00px;
+
+
+}
+/* button {
 	font-size: 25px;
 	background-color: #D4AF6A;
 }
@@ -68,7 +91,7 @@ button:hover {
 	margin-left: 00px;
 
 
-}
+} */
 
 #bandit {
 	margin-top: 110px;

@@ -36,7 +36,7 @@ body {
 }
 .image {
     position: fixed;
-    top: 380px;
+    top: 400px;
     right: 900px;
     opacity: 1;
     display: block;
@@ -57,7 +57,7 @@ body {
 
 .wolf {
 margin-left: 75%;
-margin-top: 30px;
+margin-top: 57px;
 position: fixed;
 }
 

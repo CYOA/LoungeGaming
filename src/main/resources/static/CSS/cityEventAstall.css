@@ -26,6 +26,9 @@ button.submit {
 button:hover {
 	background-color: #FFE1AA;
 }
+ a{
+	text-decoration: none;
+}
 
 .dialogue_box {
 	min-width: 500px;

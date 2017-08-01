@@ -1,46 +1,71 @@
 body {
-    background: url(/images/castleEntrance.jpg) no-repeat center center fixed; 
-    background-size: cover;
-    /* background-position: 500 -500px; */
+	background: url(/images/castleEntrance.jpg) no-repeat center center
+		fixed;
+	background-size: cover;
+	background-position: 50px - 50px; 
 }
-.dialogue_box {
-    min-width: 500px;
-    min-height: 200px;
-    max-height: 200px;
-    background: rgba(255,230,230,.85);
-    color: black;
-    display: flex;
-    font-family: 'VT323', monospace;
-    flex-wrap: wrap;
-    font-size: 16px;
-    flex-direction: row;
-    align-items: left;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-left: 250px;
-    margin-right: 250px;
-    padding-left: 30px;
-    box-shadow: 15px 15px 10px #282929;
-    border: 4px dashed #001f35;
-    border-radius: 25px;
 
+.dialogue_box {
+	min-width: 500px;
+	min-height: 200px;
+	max-height: 200px;
+	background: rgba(255, 230, 230, .85);
+	color: black;
+	display: flex;
+	font-family: 'VT323', monospace;
+	flex-wrap: wrap;
+	font-size: 16px;
+	flex-direction: row;
+	align-items: left;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+	padding-left: 30px;
+	box-shadow: 15px 15px 10px #282929;
+	border: 4px dashed #001f35;
+	border-radius: 25px;
 }
 
 .textbox {
-display: flex;
-    align-self: flex-start;
-    max-width: 100%;
-    max-height: 200px;
-    margin: auto;
-    margin-left: 30px;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    font-family: 'VT323', monospace;
-    font-size: 40px;
-    padding-right: 40px;
-
+	display: flex;
+	align-self: flex-start;
+	max-width: 100%;
+	max-height: 200px;
+	margin: auto;
+	margin-left: 30px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-family: 'VT323', monospace;
+	font-size: 40px;
+	padding-right: 40px;
 }
 
+button {
+	background-color: #D4AF6A;
+}
+
+button.continue {
+	border-radius: 8px;
+	font-size: 40px;
+	color: #553700;
+}
+
+button:hover {
+	background-color: #FFE1AA;
+}
+
+.container {
+	align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-left: 00px;
+}
+
+a {
+	text-decoration: none;
+}
 /* .knight {
     position: fixed;
     top: 490px;
@@ -53,7 +78,6 @@ display: flex;
     backface-visibility: hidden;	
 	
 }   */
-
 .knight {
 	position: fixed;
 	top: 445px;
@@ -77,6 +101,7 @@ display: flex;
 	transition: .5s ease;
 	backface-visibility: hidden;
 }
+
 .bandit {
 	position: fixed;
 	top: 489px;

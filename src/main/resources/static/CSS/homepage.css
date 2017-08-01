@@ -5,7 +5,7 @@ body {
 }
 
 .logo {
-margin-left: 490px;
+margin-left: 525px;
 padding-bottom: 300px;
 margin-top: -10px;
 }
@@ -13,7 +13,7 @@ margin-top: -10px;
 	align-items: flex-end;
 	display: flex;
 	justify-content: center;
-	margin-top: 4	0px;
+	margin-top: 40px;
 }
 
 button {
@@ -46,8 +46,8 @@ button:hover {
 
 .flag1 {
     position: fixed;
-    top: 203px;
-    right: 578px;
+    top: 211px;
+    right: 613px;
     opacity: 1;
     width: 78px;
     height: 83px;

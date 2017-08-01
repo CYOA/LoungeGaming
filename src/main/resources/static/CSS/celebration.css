@@ -41,6 +41,31 @@ display: flex;
 
 
 }
+button {
+	background-color: #D4AF6A;
+}
+
+button.continue {
+	border-radius: 8px;
+	font-size: 40px;
+	color: #553700;
+}
+
+button:hover {
+	background-color: #FFE1AA;
+}
+
+.container {
+	align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-left: 00px;
+}
+
+a {
+	text-decoration: none;
+}
 
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
