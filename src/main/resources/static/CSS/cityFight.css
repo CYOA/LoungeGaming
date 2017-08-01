@@ -78,7 +78,7 @@ button:hover {
 
 .knight {
 	position: fixed;
-	animation: 5s runKnight forwards 1s;
+	animation: 15s runKnight forwards 1s;
 	left: 50%;
 }
 
@@ -97,7 +97,7 @@ button:hover {
 
 .blue {
 	position: fixed;
-	animation: 5s runBlue forwards 1s;
+	animation: 15s runBlue forwards 1s;
 	left: 50%;
 }
 

@@ -1,7 +1,7 @@
 body {
-   /*  background: url(/images/city.jpg) no-repeat center center fixed; */
+    background: url(/images/castleEntrance.jpg) no-repeat center center fixed; 
     background-size: cover;
-    background-position: 200 -200px;
+    /* background-position: 500 -500px; */
 }
 .dialogue_box {
     min-width: 500px;
@@ -41,7 +41,7 @@ display: flex;
 
 }
 
-.knight {
+/* .knight {
     position: fixed;
     top: 490px;
     left: 50%;
@@ -52,39 +52,39 @@ display: flex;
     transition: .5s ease;
     backface-visibility: hidden;	
 	
-}  
+}   */
 
 .knight {
 	position: fixed;
-	top: 340px;
-	left: -280px;
+	top: 445px;
+	left: 283px;
 	opacity: 1;
 	display: block;
-	width: 100%;
-	height: 390px;
+	width: 500px;
+	height: 250px;
 	transition: .5s ease;
 	backface-visibility: hidden;
 }
 
 .wizard {
 	position: fixed;
-	top: 340px;
-	left: -80px;
+	top: 445px;
+	left: 550px;
 	opacity: 1;
 	display: block;
-	width: 100%;
-	height: 390px;
+	width: 255px;
+	height: 255px;
 	transition: .5s ease;
 	backface-visibility: hidden;
 }
 .bandit {
 	position: fixed;
-	top: 429px;
-	left: 625px;
+	top: 489px;
+	right: 500px;
 	/* opacity: 1;
 	display: block; */
-	width: 265px;
-	height: 215px;
+	width: 155px;
+	height: 155px;
 	/* transition: .5s ease;
 	backface-visibility: hidden; */
 }
