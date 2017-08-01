@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/countrysideEventB.css"></link>
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" />
+<title>Choice: Talk or Fight</title>
+</head>
+<body>
+
+	<div class="menuContainer">
+		<div class="column">
+			<div class="card">
+				<img id="bandit" src="/images/bandit.png" alt="bandit"
+					style="width: 100%"></img>
+				<div class="container">
+					<h2>Reason with the bandit</h2>
+					<a href="/countrysideEventBtalk"><button class="button">Persuade the bandit not to kill you</button></a>
+					<br> </br>
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn">Village Elder Advice</button>
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<p>Considering the world is about to end, maybe the scoundrel will listen to reason.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menuContainer">
+		<div class="column">
+			<div class="card">
+				<img id="emblem" src="/images/sword.png" alt="fight"
+					style="width: 75%"></img>
+				<div class="container">
+					<h2>Slay the bandit</h2>
+					<a href="/countrysideEventBfight.html"><button class="button">The only good bandit is a dead bandit</button></a>
+					<br> </br>
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn2">Village Elder Advice</button>
+
+					<!-- The Modal -->
+					<div id="myModal2" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<p>Without diplomacy, there is only war.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <audio src="Visager_-_18_-_Dark_Sanctum_Boss_Fight_Loop.mp3" autoplay loop></audio> -->
+	<script th:inline="javascript"></script>
+	<script src="/Javascript/modal.js"></script>
+</body>
+</html>

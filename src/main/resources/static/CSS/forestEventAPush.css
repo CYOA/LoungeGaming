@@ -1,0 +1,82 @@
+body {
+	background: url(/images/ForestNight.jpg) no-repeat center center fixed;
+	background-size: cover;
+	background-position: 200 -200px;
+}
+
+button {
+	background-color: #D4AF6A;
+
+}
+button.continue{
+	border-radius:8px;
+	font-size: 40px;
+	color: #553700;
+}
+
+button:hover {
+	background-color: #FFE1AA;
+}
+
+.container {
+	align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-left: 0px;
+
+}
+.dialogue_box {
+	min-width: 500px;
+	min-height: 200px;
+	max-height: 200px;
+	background: rgba(255, 230, 230, .85);
+	color: black;
+	display: flex;
+	font-family: 'VT323', monospace;
+	flex-wrap: wrap;
+	font-size: 16px;
+	flex-direction: row;
+	align-items: left;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+	padding-left: 30px;
+	box-shadow: 15px 15px 10px #282929;
+	border: 4px dashed #001f35;
+	border-radius: 25px;
+}
+
+.textbox {
+	display: flex;
+	align-self: flex-start;
+	max-width: 100%;
+	max-height: 200px;
+	margin: auto;
+	margin-left: 30px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-family: 'VT323', monospace;
+	font-size: 40px;
+	padding-right: 40px;
+}
+
+::-webkit-scrollbar {
+	width: 0px; /* remove scrollbar space */
+	background: transparent; /* optional: just make scrollbar invisible */
+}
+
+
+.image {
+	position: fixed;
+	top: 300px;
+	left: -25px;
+	opacity: 1;
+	display: block;
+	width: 140px;
+	height: 300px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	margin: 0px;
+}

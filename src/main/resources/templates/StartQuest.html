@@ -2,21 +2,37 @@
 <html>
 <head>
 <link href="CSS/StartQuest.css" rel="stylesheet"></link>
- <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"></link>
+<link href="https://fonts.googleapis.com/css?family=VT323"
+	rel="stylesheet"></link>
 
 </head>
-<body>
-<div class="dialogue_box">                                                             
-   <div class="textbox">                      
-    <h1 th:text="'Hello ' + ${heroName}"> Info about quest and Knight</h1>
-    </div>
+
+<div class="dialogue_box">                                          
+   <div class="portrait">
+   <img src="/images/elder.png"></img>
+   </div>
+
+   		<div class="textbox">                
+
+   			<h1>
+   			 <a class="typewriter" data-period="2000" data-type='[ "Thank you Sir Knight for volunteering to help us in this great time of peril. You must head to the city to help save up. You may choose the forest path to arrive quicker but danger looms inside. Or you can choose the Countryside path which will be safer but you will lose time off of our looming deadline. Choose wisely"  ]'> 
+   			 <span class="wrap"></span>
+ 			 </a>
+ 			 </h1>
+     			
+   		  
+   	 </div>
    
 </div>
-    <div class="container">
-        <img th:src="@{/images/Knight.svg}" class="image" style="width: 100%"></img>
-        <div class="middle">
-            <button class="button"><a th:href="@{/destination}">Start Your Quest!</a></button>
-        </div>
-    </div>
+<div class="container">
+		<img src="/images/Knight.svg" class="image" style="width: 100%"></img>
+		<div class="middle">
+			<button class="button">
+				<a href="destination">Start Your Quest!</a>
+			</button>
+		</div>
+	</div>
+	
+	<script src="../JS/textbox.js"></script>
 </body>
 </html>

@@ -1,0 +1,126 @@
+h1 {
+    font-family: 'Georgia', monospace;
+	font-size: 150px;
+	color: white;
+	text-align: center;
+	    font-family: 'VT323', monospace;
+	
+}
+
+a {
+text-decoration: none;
+}
+
+body {
+    background-color: black;}
+.dialogue_box{
+    min-width: 500px;
+    min-height: 200px;
+    max-height: 200px;
+    background: rgba(255,230,230,.85);
+    color: black;
+    display: flex;
+    font-family: 'VT323', monospace;
+    flex-wrap: wrap;
+    font-size: 16px;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-left: 30px;
+    box-shadow: 15px 15px 10px #282929;
+    border: 4px dashed #001f35;
+    border-radius: 25px;
+
+}
+
+.textbox {
+display: flex;
+    align-self: flex-start;
+    max-width: 100%;
+    max-height: 200px;
+    margin: auto;
+    margin-left: 30px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    padding-right: 40px;
+
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+/* .knight {
+  position: fixed;
+  top: 350px;
+  right: 830px;
+  opacity: 1;
+  width: 150px;
+  height: 150px;
+  z-index: -1;
+    background: url('/images/knightdead.png') left center;
+    animation:  play 0.8s steps(6) infinite;
+    animation-fill-mode: forwards;
+} */
+
+.image {
+    position: fixed;
+    top: 390px;
+    left: 30px;
+    opacity: 1;
+    display: block;
+  	
+    transition: .5s ease;
+    backface-visibility: hidden;	
+	
+} 
+
+@keyframes runKnight {
+	0% {left: 50%; }
+	100% {left: 100%;}	
+}
+
+.knight {
+	position: fixed;
+	animation: 5s runKnight forwards 1s;
+	left: 50%;
+}
+
+.image1 {
+    position: fixed;
+    top: 364px;
+    padding-left: 100px;
+    opacity: 1;
+    display: block;
+    width: 150px;
+    height: 150px; 
+    transition: .5s ease;
+    backface-visibility: hidden;	
+	
+}  
+
+button.continue {
+	background-color: #D4AF6A;
+	border-radius: 8px;	
+	font-size: 40px;
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	color: black;
+}
+
+button.submit {
+	font-size: 17px;
+	color: #553700;
+}
+
+button:hover {
+	background-color: #FFE1AA;
+}
