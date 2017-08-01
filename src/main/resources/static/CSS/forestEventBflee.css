@@ -62,12 +62,11 @@ display: flex;
 
 .image {
     position: fixed;
-    top: 390px;
+    top: 450px;
     left: 30px;
     opacity: 1;
     display: block;
-  	
-    transition: .5s ease;
+  	transition: .5s ease;
     backface-visibility: hidden;	
 	
 } 
@@ -85,7 +84,7 @@ display: flex;
 
 .image1 {
     position: fixed;
-    top: 364px;
+    top: 400px;
     padding-left: 100px;
     opacity: 1;
     display: block;

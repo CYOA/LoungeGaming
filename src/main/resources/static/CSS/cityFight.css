@@ -1,0 +1,209 @@
+body {
+    background: url(/images/city.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: 200 -200px;
+}
+.dialogue_box {
+    min-width: 500px;
+    min-height: 200px;
+    max-height: 200px;
+    background: rgba(255,230,230,.85);
+    color: black;
+    display: flex;
+    font-family: 'VT323', monospace;
+    flex-wrap: wrap;
+    font-size: 16px;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-left: 30px;
+    box-shadow: 15px 15px 10px #282929;
+    border: 4px dashed #001f35;
+    border-radius: 25px;
+
+}
+
+.textbox {
+display: flex;
+    align-self: flex-start;
+    max-width: 100%;
+    max-height: 200px;
+    margin: auto;
+    margin-left: 30px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    padding-right: 40px;
+
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+button.continue {
+	background-color: #D4AF6A;
+	border-radius: 8px;
+	font-size: 40px;
+	display: block;
+	margin: auto;
+	margin-top: 130px;
+	color: black;
+}
+
+button.submit {
+	font-size: 17px;
+	color: #553700;
+}
+
+button:hover {
+	background-color: #FFE1AA;
+} 
+
+@keyframes runKnight {
+	0% {left: 50%; }
+	100% {left: 110%;}	
+} 
+
+@keyframes runBlue {
+	0% {left: 415px; }
+	100% {left: 100%;}	
+}
+
+.knight {
+	position: fixed;
+	animation: 15s runKnight forwards 1s;
+	left: 50%;
+}
+
+.knight {
+    position: fixed;
+    top: 490px;
+    left: 50%;
+    opacity: 1;
+    display: block;
+    width: 150px;
+    height: 150px; 
+    transition: .5s ease;
+    backface-visibility: hidden;	
+	
+}
+
+.blue {
+	position: fixed;
+	animation: 15s runBlue forwards 1s;
+	left: 50%;
+}
+
+.blue {
+    position: fixed;
+    top: 515px;
+    left: 415px;
+    opacity: 1;
+    display: block;
+    width: 150px;
+    height: 150px; 
+    transition: .5s ease; 
+    backface-visibility: hidden;	
+	
+}  
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.green {
+	position: fixed;
+	animation: 5s bounceIn forwards 1s;
+	left: 50%;
+}
+ .green {
+   position: fixed;
+    top: 200px;
+    right: 80px;
+    opacity: 1;
+    display: block;
+    width: 150px;
+    height: 150px; 
+    transition: .5s ease;.knight {
+	position: fixed;
+	animation: 5s runKnight forwards 1s;
+	left: 50%;
+}
+   
+	  
+}   
+
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}
+ .fourarmed {
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate 8;
+    
+} 
+
+/* .fourarmed {
+    position: fixed;
+    top: 475px;
+    left: 175px;
+    opacity: 1;
+    display: block;
+    width: 150px;
+    height: 150px; 
+    transition: .5s ease;
+    backface-visibility: hidden;	 
+    transform-origin: 50% 50%;
+  animation: jump .5s linear alternate 8;
+	
+} */
+
+@keyframes fly {
+	0% {
+		top:75px; 
+		right: 75px;
+		width: 400px;
+	}
+	100% {
+		top: 90%;
+		right: 0%;
+	}	
+}
+
+.winged {
+	position: fixed;
+	animation: 5s fly 1s;
+}
+
+.winged {
+    position: fixed;
+    top: 75px;
+    right: 75px;
+    opacity: 1;
+    display: block;
+    width: 150px;
+    height: 150px; 
+    /* transition: .5s ease; */
+    backface-visibility: hidden;	
+	
+}  
+
+
