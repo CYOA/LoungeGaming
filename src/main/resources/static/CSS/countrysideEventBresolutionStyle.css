@@ -83,41 +83,10 @@ button:hover {
 
 }
 
-/* #bandit {
-	margin-left: 400px;
-	margin-top: 110px;
+.img-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 160px;
+	margin-left: 50px;
+	
 }
- */
-
-#bandit {
-	margin-left: 55%;
-	margin-top: 100px;	
-	position: fixed;
-	width: 250px;
-	height: 231px;
-	background: url('/images/banditattack.png') left center;
-	animation: play 0.8s steps(7) infinite;
-	z-index: 5;
-  
-	transform: rotate(-90deg) scaleY(-1);
-}
-
-#knight {
-	margin-left: 44%;
-	margin-top: 100px;	
-	position: fixed;
-	width: 250px;
-	height: 200px;
-	background: url('/images/knightdead.png') left center;
-	animation: play2 0.8s steps(7) infinite;
-	z-index: 5;
-  
-}
-
-@keyframes play {
-   100% { background-position: -1748px; }
-   
-}
-
-@keyframes play2 {
-   100% { background-position: -1748px; }

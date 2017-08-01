@@ -149,10 +149,10 @@ public class WebController {
 		return "countrysideEventB";
 	}
 	
-		@RequestMapping("/countrysideEventBfight")
-		public String displayCountrysideEventBFight(Model model) {
-			return "countrysideEventBfight";
-		}
+//		@RequestMapping("/countrysideEventBfight")
+//		public String displayCountrysideEventBFight(Model model) {
+//			return "countrysideEventBfight";
+//		}
 
 		@RequestMapping("/countrysideEventBtalk")
 		public String displayCountrysideEventBTalk(Model model) {
