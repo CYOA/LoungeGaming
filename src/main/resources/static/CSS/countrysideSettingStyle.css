@@ -59,3 +59,13 @@ button {
 button:hover {
 	background-color: #FFE1AA
 }
+
+#bandit {
+	
+}
+
+#knight {
+	transform: scaleX(-1);
+	margin-left: 800px;
+	margin-top: 150px;
+}
