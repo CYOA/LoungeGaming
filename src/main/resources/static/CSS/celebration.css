@@ -1,0 +1,239 @@
+body {
+    background: url(/images/throneroom.jpeg) no-repeat center center fixed;
+    background-size: cover;
+   background-position: 200 -200px; 
+}
+.dialogue_box {
+    min-width: 500px;
+    min-height: 200px;
+    max-height: 200px;
+    background: rgba(255,230,230,.85);
+    color: black;
+    display: flex;
+    font-family: 'VT323', monospace;
+    flex-wrap: wrap;
+    font-size: 16px;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-left: 30px;
+    box-shadow: 15px 15px 10px #282929;
+    border: 4px dashed #001f35;
+    border-radius: 25px;
+
+}
+
+.textbox {
+display: flex;
+    align-self: flex-start;
+    max-width: 100%;
+    max-height: 200px;
+    margin: auto;
+    margin-left: 30px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    padding-right: 40px;
+
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
+
+
+
+ 
+img.bard{
+	
+	position: fixed;
+	top: 480px;
+	padding-left:170px;
+	opacity: 1;
+	display: block;
+	width: 100px;
+	height: 150px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+@keyframes poop-dance {
+  from, 49% { transform-origin: -50% 100%; }
+  50%, 75%, to { transform-origin: 150% 100%; }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(10deg); }
+}
+
+.bard {
+	animation: poop-dance .95s infinite alternate ease-in-out;
+}
+
+.bard {
+	display: inline-block;
+}
+
+
+img.leftwarrior{
+	position: fixed;
+	top: 490px;
+	/* padding- */right:190px;
+	opacity: 1;
+	display: block;
+	width: 130px;
+	height: 150px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+@keyframes poop-dance {
+  from, 49% { transform-origin: -50% 100%; }
+  50%, 75%, to { transform-origin: 150% 100%; }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(10deg); }
+}
+
+.leftwarrior {
+	animation: poop-dance .93s infinite alternate ease-in-out;
+}
+
+.leftwarrior {
+	display: inline-block;
+}
+
+
+img.orc{
+	position: fixed;
+	top: 510px;
+	/* padding- */right:30px;
+	opacity: 1;
+	display: block;
+	width: 130px;
+	height: 150px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+@keyframes poop-dance {
+  from, 49% { transform-origin: -50% 100%; }
+  50%, 75%, to { transform-origin: 150% 100%; }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(10deg); }
+}
+
+.orc {
+	animation: poop-dance .92s infinite alternate ease-in-out;
+}
+
+.orc {
+	display: inline-block;
+}
+
+img.mage{
+	position: fixed;
+	top: 525px;
+	/* padding- */left:30px;
+	opacity: 1;
+	display: block;
+	width: 130px;
+	height: 150px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+@keyframes poop-dance {
+  from, 49% { transform-origin: -50% 100%; }
+  50%, 75%, to { transform-origin: 150% 100%; }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(10deg); }
+}
+
+.mage {
+	animation: poop-dance .9s infinite alternate ease-in-out;
+}
+
+.mage {
+	display: inline-block;
+}
+
+img.archer{
+	position: fixed;
+	top: 520px;
+	/* padding- */left:290px;
+	opacity: 1;
+	display: block;
+	width: 110px;
+	height: 150px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+@keyframes poop-dance {
+  from, 49% { transform-origin: -50% 100%; }
+  50%, 75%, to { transform-origin: 150% 100%; }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(10deg); }
+}
+
+.archer {
+	animation: poop-dance .96s infinite alternate ease-in-out;
+}
+
+.archer {
+	display: inline-block;
+}
+
+img.bandit{
+	position: fixed;
+	top: 515px;
+	/* padding- */left:430px;
+	opacity: 1;
+	display: block;
+	width: 130px;
+	height: 150px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+img.wizard{
+	position: fixed;
+	top: 515px;
+	/* padding- */right:380px;
+	opacity: 1;
+	display: block;
+	width: 130px;
+	height: 150px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+img.knight{
+	position: fixed;
+	top: 510px;
+	/* padding- */right:590px;
+	opacity: 1;
+	display: block;
+	width: 130px;
+	height: 150px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+
+
+
+
+
+
+
