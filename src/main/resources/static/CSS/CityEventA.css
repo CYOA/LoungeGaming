@@ -116,6 +116,9 @@ img {
 .button:hover {
 	background-color: #555;
 }
+a {
+	text-decoration: none;
+}
 
 h2 {
 	text-align: center;
