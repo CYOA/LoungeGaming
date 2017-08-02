@@ -43,14 +43,6 @@ display: flex;
 
 }
 
-.continue {
-	margin-top: 50px;
-}
-
-.continueAnchor {
-	margin-left: 465px;
-	
-}
 button {
 	background-color: #D4AF6A;
 
@@ -74,31 +66,12 @@ button:hover {
 
 
 }
-/* button {
-	font-size: 25px;
-	background-color: #D4AF6A;
-}
-
-button:hover {
-	background-color: #FFE1AA
-}
-
-.container {
-	align-items: flex-end;
-	display: flex;
-	justify-content: center;
-	margin-top: 30px;
-	margin-left: 00px;
-
-
-} */
-
 #bandit {
 	margin-top: 110px;
 	margin-left: 500px;
 }
 
-#knight {
+#knight { 
 	transform: scaleX(-1);
 	margin-left: 1000px;
 	margin-top: -70px;
