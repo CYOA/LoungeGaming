@@ -96,8 +96,7 @@ button:hover {
 	background: url('/images/banditattack.png') left center;
 	animation: play 0.8s steps(7) infinite;
 	z-index: 5;
-  
-	transform: rotate(-90deg) scaleY(-1);
+	transform: rotate(-90deg) scaleY(-1) scale(.75, .75);
 }
 
 #knight {
