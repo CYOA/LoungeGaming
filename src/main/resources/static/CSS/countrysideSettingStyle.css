@@ -2,7 +2,7 @@ body {
 	background-image: url("../images/Countryside.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-size: 1300px 750px; 
+	background-size: 1370px 680px; 
 }
 
 .dialogue_box {
@@ -100,6 +100,6 @@ button:hover {
 
 #knight {
 	transform: scaleX(-1);
-	margin-left: 800px;
-	margin-top: 10px;
+	margin-left: 1000px;
+	margin-top: -70px;
 }

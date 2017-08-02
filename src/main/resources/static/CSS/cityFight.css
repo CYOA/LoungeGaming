@@ -70,34 +70,13 @@ button:hover {
 	text-decoration: none;
 }
 
-@keyframes runKnight {
-	0% {left: 50%; }
-	100% {left: 110%;}	
-} 
 
 @keyframes runBlue {
 	0% {left: 415px; }
-	100% {left: 100%;}	
+	100% {left: 50%;}	
 }
 
-.knight {
-	position: fixed;
-	animation: 15s runKnight forwards 1s;
-	left: 50%;
-}
 
-.knight {
-    position: fixed;
-    top: 490px;
-    left: 50%;
-    opacity: 1;
-    display: block;
-    width: 150px;
-    height: 150px; 
-    transition: .5s ease;
-    backface-visibility: hidden;	
-	
-}
 
 .blue {
 	position: fixed;
@@ -107,7 +86,7 @@ button:hover {
 
 .blue {
     position: fixed;
-    top: 515px;
+    top: 540px;
     left: 415px;
     opacity: 1;
     display: block;
@@ -210,4 +189,26 @@ button:hover {
 	
 }  
 
+@keyframes runKnight {
+	0% {right: 0%; }
+	100% {right:30%;}	
+} 
 
+.knight {
+	position: fixed;
+	animation: 15s runKnight forwards 1s;
+	right: 0%;
+}
+
+.knight {
+    position: fixed;
+    top: 520px;
+    right: 0%;
+    opacity: 1;
+    display: block;
+    width: 150px;
+    height: 150px; 
+    transition: .5s ease;
+    backface-visibility: hidden;	
+	
+}
