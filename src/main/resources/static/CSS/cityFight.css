@@ -1,6 +1,7 @@
 body {
     background: url(/images/city.jpg) no-repeat center center fixed;
     background-size: cover;
+    background-size: 1600px 770px;
     background-position: 200 -200px;
 }
 .dialogue_box {

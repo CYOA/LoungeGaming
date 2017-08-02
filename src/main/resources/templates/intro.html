@@ -5,37 +5,40 @@
 <title>Intro Page</title>
 <link href="CSS/introStyle.css" rel="stylesheet"></link>
 <link href="CSS/dialogue.css" rel="stylesheet"></link>
- <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"></link>
+<link href="https://fonts.googleapis.com/css?family=VT323"
+	rel="stylesheet"></link>
 </head>
 <body>
-<div class="dialogue_box">                                          
-                    
-   
-   <div class="textbox">                      
-   		 <marquee LOOP="1" SCROLLAMOUNT="2" onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" direction="up" height=".textbox.height" width="dialogue_box.width" scrolldelay="0">
+	<div class="dialogue_box">
 
-   			 Word is ringing out from the Great City that an ominous gate has appeared in the center square. As people gathered to marvel, a single figure stepped forth from the gate. Cloaked and forboding, he declared the world would end in seven days....
 
-         In a small village outside the city, a village elder gathers everyone together to share the grim news. While he seems resigned to their fate, there is one villager who is not...
-         <br></br>
+		<div class="textbox">
+			<marquee LOOP="1" SCROLLAMOUNT="2" onmouseover="this.stop();"
+				onmouseout="this.start();" behavior="scroll" direction="up"
+				height=".textbox.height" width="dialogue_box.width" scrolldelay="0">
 
-         
-   		<span class="wrap"></span>
- 		</marquee>
- <!--    <h4><p th:each = "current: ${narrator0.dialogues}" th:text= "${current.content}"></p></h4>
+				Word is ringing out from the Great City that an ominous gate has
+				appeared in the center square. As people gathered to marvel, a
+				single figure stepped forth from the gate. Cloaked and forboding, he
+				declared the world would end in seven days. In a small village
+				outside the city, a village elder gathers everyone together to share
+				the grim news. While he seems resigned to their fate, there is one
+				villager who is not... <br></br> <span class="wrap"></span>
+			</marquee>
+			<!--    <h4><p th:each = "current: ${narrator0.dialogues}" th:text= "${current.content}"></p></h4>
  -->
-    </div>
-   
-</div>
+		</div>
 
-<!-- <p th:each = "current: ${narrator.dialogues}" th:text= "${current.content}"></p> -->
-<div class="container">
-<a th:href="@{/chooseCharacter}"><button class = "continue">Continue</button></a>
-</div>
-<!-- <img th:src="@{/images/FarAwayTown.svg}" class="backgroundImage"></img>
+	</div>
+
+	<!-- <p th:each = "current: ${narrator.dialogues}" th:text= "${current.content}"></p> -->
+	<div class="container">
+		<a th:href="@{/chooseCharacter}"><button class="continue">Continue</button></a>
+	</div>
+	<!-- <img th:src="@{/images/FarAwayTown.svg}" class="backgroundImage"></img>
  -->
- <audio th:autoplay="autoplay">
-    <source src="Visager_-_03_-_Shrine.mp3" type="audio/mpeg"></source>
-</audio>
- </body>
+	<audio th:autoplay="autoplay">
+		<source src="Visager_-_03_-_Shrine.mp3" type="audio/mpeg"></source>
+	</audio>
+</body>
 </html>

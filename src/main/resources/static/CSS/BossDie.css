@@ -59,8 +59,9 @@ width: 218px;
 
 
 .knight {
-		margin-left: 80%;
-	margin-top:30px;
+	margin-left: 80%;
+	top: 540px;
+	margin-top: -30px;
 	position: fixed;
   width: 144px;
   height: 135px;
@@ -69,7 +70,7 @@ width: 218px;
 }
 .wizard  {
 position: fixed;
-    top: 362px;
+    top: 500px;
     right: -15px;
     opacity: 1;
     display: block;
@@ -85,7 +86,7 @@ position: fixed;
 
  .bandit img {
 	margin-left: 70%;
-	margin-top:30px;
+	margin-top:170px;
 	position: fixed;
   width: 144px;
   height: 135px;

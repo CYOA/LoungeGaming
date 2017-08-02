@@ -1,7 +1,8 @@
 body {
 	background-image: url("../images/Countryside.jpg");
 	background-repeat: no-repeat;
-	background-size: 1300px 750px;
+	background-size: cover;
+	background-size: 1600px 800px;
 }
 
 .dialogue_box {
@@ -93,5 +94,6 @@ button:hover {
 
 #wizard {
 	transform: scaleX(-1);
-	margin-top: -40px;;
+	margin-top: -30px;
+	margin-left: 120px;
 }

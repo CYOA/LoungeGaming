@@ -1,115 +1,114 @@
 body {
-    background: url(/images/throneroom.jpg);
-    background-size: cover; 
+	background: url(/images/throneroom.jpg);
+	background-size: cover;
+	background-size: 1600px 750px;
 }
+
 .dialogue_box {
-    min-width: 600px;
-    min-height: 200px;
-    max-width: 600px;
-    background: rgba(255,230,230,.85);
-    color: black;
-    display: flex;
+	min-width: 600px;
+	min-height: 200px;
+	max-width: 600px;
+	background: rgba(255, 230, 230, .85);
+	color: black;
+	display: flex;
 	font-family: 'VT323', monospace;
 	flex-wrap: wrap;
-    font-size: 16px;
-  	flex-direction: row;
-    align-items: left;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-left: 500px;
-    margin-right: 5	px;
-    padding-left: 30px;
-    box-shadow: 15px 15px 10px #282929;
-    border: 4px dashed #001f35;
-    border-radius: 25px;
-
+	font-size: 16px;
+	flex-direction: row;
+	align-items: left;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-left: 500px;
+	margin-right: 5 px;
+	padding-left: 30px;
+	box-shadow: 15px 15px 10px #282929;
+	border: 4px dashed #001f35;
+	border-radius: 25px;
 }
+
 .textbox, #typewriter {
 	display: flex;
 	align-self: flex-start;
 	max-width: 70%;
-    max-height: 200px;
-    margin: auto;
-    margin-left: 30px;
-
+	max-height: 200px;
+	margin: auto;
+	margin-left: 30px;
 }
 
-.portrait   {
-max-width: 30%;
-	display:flex;
+.portrait {
+	max-width: 30%;
+	display: flex;
 	max-width: 166px;
-    max-height: 161px;
-    color: white;
-    align-self: left;
-    margin-top:30px;
-    margin-left: -20px;
+	max-height: 161px;
+	color: white;
+	align-self: left;
+	margin-top: 30px;
+	margin-left: -20px;
 }
 
 .boss {
-	margin-left: 34%;
-	margin-top:-150px;
+	margin-left: 43%;
+	margin-top: -50px;
 	position: fixed;
-  width: 365px;
-  height: 333px;
-  background: url('/images/boss.png') left center;
-  animation: play 1.5s steps(8) infinite;
- z-index: 5;
-  
+	width: 365px;
+	height: 333px;
+	background: url('/images/boss.png') left center;
+	animation: play 1.5s steps(8) infinite;
+	z-index: 5;
 }
 
 .knight {
-		margin-left: 80%;
-	margin-top:30px;
+	margin-left: 80%;
+	top: 540px;
+	margin-top: -30px;
 	position: fixed;
-  width: 144px;
-  height: 135px;
-		background: url('/images/knight-left.png') left center;
-	
+	width: 144px;
+	height: 135px;
+	background: url('/images/knight-left.png') left center;
 }
-.wizard  {
-position: fixed;
-    top: 362px;
-    right: -15px;
-    opacity: 1;
-    display: block;
-    backface-visibility: hidden;
-    z-index: 1;
-	
+
+.wizard {
+	position: fixed;
+	top: 500px;
+	right: -15px;
+	opacity: 1;
+	display: block;
+	backface-visibility: hidden;
+	z-index: 1;
 }
 
 .wizard img {
- width: 130px;
-    height: 150px;
+	width: 130px;
+	height: 150px;
 }
 
- .bandit img {
+.bandit img {
 	margin-left: 70%;
-	margin-top:30px;
+	margin-top: 170px;
 	position: fixed;
-  width: 144px;
-  height: 135px;
- }
+	width: 144px;
+	height: 135px;
+}
 
 .demon {
 	margin-left: 15%;
-	margin-top:-70px;
+	margin-top: -70px;
 	position: fixed;
-  width: 242px;
-  height: 133px;
-  background: url('/images/monster1.png') left center;
-  filter: alpha(opacity=0);  
+	width: 242px;
+	height: 133px;
+	background: url('/images/monster1.png') left center;
+	filter: alpha(opacity = 0);
 	-webkit-animation: 24s ease 0s normal forwards .66 fadein;
-    animation: 24s ease 0s normal forwards .66 fadein;
- z-index: 6;
-
+	animation: 24s ease 0s normal forwards .66 fadein;
+	z-index: 6;
 }
 
 button {
 	background-color: #D4AF6A;
-
 }
-button.continue{
-	border-radius:8px;
+
+button.continue {
+	border-radius: 8px;
 	font-size: 40px;
 	color: #553700;
 }
@@ -125,43 +124,135 @@ button:hover {
 	margin-top: 30px;
 	margin-left: 780px;
 }
+
 .blackhole {
 	margin-left: 10%;
 	height: 400px;
 	margin-top: -200px;
-	-webkit-animation:spin 2s linear infinite;
+	-webkit-animation: spin 2s linear infinite;
 }
 
-@-webkit-keyframes spin { 
-    100% { 
-        transform: rotate(360deg);
-    } 
+@
+-webkit-keyframes spin { 100% {
+	transform: rotate(360deg);
 }
+
+}
+* {
+	color: black;
+	text-decoration: none;
+}
+
+@
+keyframes play { 100% {
+	background-position: -2923px;
+}
+
+}
+@
+keyframes fadein { 0% {
+	opacity: 0;
+}
+
+10%
+{
+opacity
+:
+.1
+;
  
+}
+20%
+{
+opacity
+:
+.2
+;
  
-
-* { color:black; text-decoration: none;}
-@keyframes play {
-   100% { background-position: -2923px; }
 }
-
-@keyframes fadein{
-    0% { opacity:0; }
-    10% { opacity:.1; }
-    20% { opacity:.2; }
-    30% { opacity:.3; }
-    40% { opacity:.4; }
-    50% { opacity:.5; }
-    60% { opacity:.6; }
-    
+30%
+{
+opacity
+:
+.3
+;
+ 
 }
-
-@-webkit-keyframes fadein{
-    0% { opacity:0; }
-    10% { opacity:.1; }
-    20% { opacity:.2; }
-    30% { opacity:.3; }
-    40% { opacity:.4; }
-    50% { opacity:.5; }
-    60% { opacity:.6; }
+40%
+{
+opacity
+:
+.4
+;
+ 
+}
+50%
+{
+opacity
+:
+.5
+;
+ 
+}
+60%
+{
+opacity
+:
+.6
+;
+ 
+}
+}
+@
+-webkit-keyframes fadein { 0% {
+	opacity: 0;
+}
+10%
+{
+opacity
+:
+.1
+;
+ 
+}
+20%
+{
+opacity
+:
+.2
+;
+ 
+}
+30%
+{
+opacity
+:
+.3
+;
+ 
+}
+40%
+{
+opacity
+:
+.4
+;
+ 
+}
+50%
+{
+opacity
+:
+.5
+;
+ 
+}
+60%
+{
+opacity
+:
+.6
+;
+ 
+}
 }
